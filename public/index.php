@@ -8,6 +8,7 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/libs/animate.css">
 
   <title>Partner Bank</title>
 </head>
@@ -28,10 +29,10 @@
               </span>
             </button>
 
-            <div class="collapse navbar-collapse text-right" id="navMobile">
+            <div class="collapse navbar-collapse d-flex justify-content-end" id="navMobile">
               <div class="navbar-nav">
-                <a class="nav-item nav-link" href="#">Receber por boleto</a>
-                <a class="nav-item nav-link" href="#">Receber por cartão</a>
+                <!--<a class="nav-item nav-link" href="#">Receber por boleto</a>-->
+                <!--<a class="nav-item nav-link" href="#">Receber por cartão</a>-->
                 <a class="nav-item btn btn-outline-roxo" href="#" data-toggle="modal" data-target="#ModalContato">Quero conhecer</a>
               </div>
             </div>
@@ -45,11 +46,11 @@
     <div class="container">
       <div class="row d-flex justify-content-between align-items-center">
         <div class="col-12 col-md-5">
-          <h1 class="text-amarelo text-center text-md-left">O jeito simples e seguro de cuidar dos seus serviços bancários</h1>
-          <p class="lead text-italic text-roxo text-center text-md-left">Desburocratize de vez a gestão financeira da sua empresa com o Partner Bank, <span class="font-weight-bold">única solução com pagamento em D+1</span></p>
+          <h1 class="text-amarelo text-center text-md-left wow fadeInLeft">O jeito simples e seguro de cuidar dos seus serviços bancários</h1>
+          <p class="lead text-italic text-roxo text-center text-md-left wow fadeInLeft" data-wow-delay=".2s">Desburocratize de vez a gestão financeira da sua empresa com o Partner Bank, <span class="font-weight-bold">única solução com pagamento em D+1</span></p>
         </div>
 
-        <div class="col-12 col-md-7">
+        <div class="col-12 col-md-7 wow fadeInRight" data-wow-delay=".2s">
           <img src="images/executivo-cliente-partner-bank.png" alt="Executivo cliente da Partner Bank" class="img-fluid" />
         </div>
       </div>
@@ -59,7 +60,7 @@
   <section id="frase">
     <div class="container">
       <div class="row d-flex justify-content-center">
-        <div class="col-10 col-md-8 text-center pt-4">
+        <div class="col-10 col-md-8 text-center pt-4 wow fadeInDown">
           <p class="lead">Com o <span class="font-weight-bold">Partner Bank</span> é possível automatizar processos, facilitar o acesso aos meios de pagamentos e gerir as cobranças de todos os seus clientes e condôminos.</p>
         </div>
       </div>
@@ -69,13 +70,13 @@
   <section id="institucional">
     <div class="container">
       <div class="row d-flex justify-content-center justify-content-md-between">
-        <div class="col-11 col-md-4">
+        <div class="col-11 col-md-4 wow fadeInDown">
           <div class="instituiconal-imagem">
             <img src="images/marca-partner-bank-institucional.png" alt="Partner Bank" class="img-fluid mb-3 mb-md-0" />
           </div>
         </div>
 
-        <div class="col-11 col-md-7 d-flex align-items-center text-center text-md-left">
+        <div class="col-11 col-md-7 d-flex align-items-center text-center text-md-left wow fadeInRight">
           <p>Automatizamos processos financeiros para empresas. Nossa solução atende aos mais variados segmentos e portes de negócio e é ideal para modelos de cobrança recorrente, por meio de boleto bancário.</p>
         </div>
       </div>
@@ -91,42 +92,42 @@
       </div>
 
       <div class="row d-flex justify-content-center">
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-4 wow fadeInDown" data-wow-delay=".2s">
           <div class="box-beneficio d-flex justify-content-center align-items-center">
             <img src="images/icone-convenio.svg" alt="#" />
             <p>Abra <strong>convênios de forma totalmente automática</strong> sem a burocracia dos bancos</p>
           </div>
         </div>
 
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-4 wow fadeInDown" data-wow-delay=".4s">
           <div class="box-beneficio d-flex justify-content-center align-items-center">
             <img src="images/icone-automatiza.svg" alt="#" />
             <p><strong>Automatize</strong> registros e baixas de boletos</p>
           </div>
         </div>
 
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-4 wow fadeInDown" data-wow-delay=".6s">
           <div class="box-beneficio d-flex justify-content-center align-items-center">
             <img src="images/icone-tarifa.svg" alt="#" />
             <p>Realize o pagamento de uma <strong>única tarifa</strong>. Apenas na liquidação</p>
           </div>
         </div>
 
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-4 wow fadeInDown" data-wow-delay=".8s">
           <div class="box-beneficio d-flex justify-content-center align-items-center">
             <img src="images/icone-d1.svg" alt="#" />
             <p>Receba os créditos dos boletos em sua <strong>conta em D+1</strong></p>
           </div>
         </div>
 
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-4 wow fadeInDown" data-wow-delay="1s">
           <div class="box-beneficio d-flex justify-content-center align-items-center">
             <img src="images/icone-taxa0.svg" alt="#" />
             <p><strong>Taxa 0%</strong> nas baixas e alterações nos boletos</p>
           </div>
         </div>
 
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-4 wow fadeInDown" data-wow-delay="1.2s">
           <div class="box-beneficio d-flex justify-content-center align-items-center">
             <img src="images/icone-integracao.svg" alt="#" />
             <p>100% integrado ao sistema <strong>Condomínio21</strong></p>
@@ -145,21 +146,21 @@
       </div>
 
       <div class="row d-flex justify-content-around">
-        <div class="col-10 col-md-3 text-center box-diferenciais">
+        <div class="col-10 col-md-3 text-center box-diferenciais wow fadeInDown">
           <div class="d-flex justify-content-center align-items-center mx-auto box-diferenciais-img">
             <img src="images/icone-leis.svg" alt="#">
           </div>
           <p>Em conformidade com as leis e regulamentações bancárias. Confiança para fazer mais.</p>
         </div>
 
-        <div class="col-10 col-md-3 text-center box-diferenciais">
+        <div class="col-10 col-md-3 text-center box-diferenciais wow fadeInDown" data-wow-delay=".2s">
           <div class="d-flex justify-content-center align-items-center mx-auto box-diferenciais-img">
             <img src="images/icone-seguranca.svg" alt="#">
           </div>
           <p>Tecnologia segura e auditada para entregar resultados reais.</p>
         </div>
 
-        <div class="col-10 col-md-3 text-center box-diferenciais">
+        <div class="col-10 col-md-3 text-center box-diferenciais wow fadeInDown" data-wow-delay=".4s">
           <div class="d-flex justify-content-center align-items-center mx-auto box-diferenciais-img">
             <img src="images/icone-bc.svg" alt="#">
           </div>
@@ -178,21 +179,21 @@
       </div>
 
       <div class="row d-flex justify-content-center">
-        <div class="col-12 col-md-3 text-center box-equipe">
+        <div class="col-12 col-md-3 text-center box-equipe wow fadeInDown">
           <img src="images/valter-gomes.png" alt="#" class="mb-0 mb-md-4">
           <h3>Valter Gomes</h3>
           <p>CEO</p>
           <a href="#" title="Linkedin Valter Gomes"><img src="images/linkedin-logo.svg" alt="Linkedin" /></a>
         </div>
 
-        <div class="col-12 col-md-3 text-center box-equipe">
+        <div class="col-12 col-md-3 text-center box-equipe wow fadeInDown" data-wow-delay=".2s">
           <img src="images/rodrigo-monteiro.png" alt="#" class="mb-0 mb-md-4">
           <h3>Rodrigo Monteiro</h3>
           <p>Presidente do Conselho</p>
           <a href="#" title="Linkedin Rodrigo Monteiro"><img src="images/linkedin-logo.svg" alt="Linkedin" /></a>
         </div>
 
-        <div class="col-12 col-md-3 text-center box-equipe">
+        <div class="col-12 col-md-3 text-center box-equipe wow fadeInDown" data-wow-delay=".4s">
           <img src="images/danilo-frota.png" alt="#" class="mb-0 mb-md-4">
           <h3>Danilo Frota</h3>
           <p>CTO</p>
@@ -201,14 +202,14 @@
       </div>
 
       <div class="row d-flex justify-content-center">
-        <div class="col-12 col-md-3 text-center box-equipe">
+        <div class="col-12 col-md-3 text-center box-equipe wow fadeInDown" data-wow-delay=".6s">
           <img src="images/flavio-ribeiro.png" alt="#" class="mb-0 mb-md-4">
           <h3>Flávio Ribeiro</h3>
           <p>CIO</p>
           <a href="#" title="Linkedin Flávio Ribeiro"><img src="images/linkedin-logo.svg" alt="Linkedin" /></a>
         </div>
 
-        <div class="col-12 col-md-3 text-center box-equipe">
+        <div class="col-12 col-md-3 text-center box-equipe wow fadeInDown" data-wow-delay=".8s">
           <img src="images/roberson-barros.png" alt="#" class="mb-0 mb-md-4">
           <h3>Roberson Barros</h3>
           <p>Conselheiro</p>
@@ -222,15 +223,15 @@
     <div class="container">
       <div class="row d-flex justify-content-center">
         <div class="col-12 col-md-8 text-center">
-          <h2 class="text-roxo">Comece a fazer diferente agora</h2>
-          <p class="lead text-roxo">Para nós, tecnologia não é apenas uma forma de mudar processos. É uma forma de alavancar a transformação que o seu negócio precisa. Fale com nossos especialistas e vamos trabalhar juntos.</p>
+          <h2 class="text-roxo wow fadeInLeft">Comece a fazer diferente agora</h2>
+          <p class="lead text-roxo wow fadeInLeft" data-wow-delay=".2s">Para nós, tecnologia não é apenas uma forma de mudar processos. É uma forma de alavancar a transformação que o seu negócio precisa. Fale com nossos especialistas e vamos trabalhar juntos.</p>
         </div>
       </div>
 
       <div class="row d-flex justify-content-center">
         <div class="col-12 col-md-6 text-center">
-          <a type="button" class="btn btn-lg btn-outline-roxo mb-3 mb-md-0" href="#" data-toggle="modal" data-target="#ModalContato">Quero conhecer</a>
-          <a type="button" class="btn btn-lg btn-outline-roxo mb-3 mb-md-0" href="#" data-toggle="modal" data-target="#ModalParceria">Quero integrar meu ERP</a>
+          <a type="button" class="btn btn-lg btn-outline-roxo mb-3 mb-md-0 wow fadeInDown" href="#" data-toggle="modal" data-target="#ModalContato">Quero conhecer</a>
+          <a type="button" class="btn btn-lg btn-outline-roxo mb-3 mb-md-0 wow fadeInDown" href="#" data-toggle="modal" data-target="#ModalParceria">Quero integrar meu ERP</a>
         </div>
       </div>
     </div>
@@ -239,14 +240,14 @@
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md-6 d-flex justify-content-center align-items-center my-5">
+        <div class="col-12 col-md-6 d-flex justify-content-center align-items-center my-5 wow fadeInDown">
           <img src="images/mapa-sao-paulo.svg" alt="Mapa de São Paulo" class="mr-3" />
           <p class="text-roxo"><strong>São Paulo</strong><br />
             Rua Álvaro Anes, 56, 8º andar<br />
             Pinheiros . São Paulo . CEP: 05421-010</p>
         </div>
 
-        <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+        <div class="col-12 col-md-6 d-flex justify-content-center align-items-center wow fadeInDown" data-wow-delay=".2s">
           <img src="images/mapa-minas-gerais.svg" alt="Mapa de Minas Gerais" class="mr-3" />
           <p class="text-roxo"><strong>Belo Horizonte</strong><br />
             Rua Santa Catarina, 1631, 8ºAndar<br />
@@ -265,26 +266,47 @@
 
   <!-- Modal -->
   <div class="modal fade" id="ModalContato" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-dialog modal-md modal-dialog-centered" role="document">
       <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="TituloModalCentralizado">Entre em contato</h5>
+        <div class="modal-header border-0">
+          <h3 class="modal-title text-center" id="TituloModalCentralizado">Entre em contato</h3>
           <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-          <button type="button" class="btn btn-primary">Salvar mudanças</button>
+          <form id="formSite">
+            <div class="form-group">
+              <label for="nome">Nome</label>
+              <input type="text" name="nome" class="form-control" id="nome" placeholder="Digite seu nome" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" name="email" class="form-control" id="email" placeholder="Digite seu e-mail" required>
+            </div>
+            <div class="form-group">
+              <label for="telefone">Telefone</label>
+              <input type="text" name="telefone" class="form-control" id="telefone" placeholder="(00) 00000-0000" data-mask="(00) 00000-0000" required>
+            </div>
+            <div class="form-group">
+              <label for="empresa">Empresa</label>
+              <input type="text" name="empresa" class="form-control" id="empresa" placeholder="Digite o nome da sua empresa" required>
+            </div>
+            <div class="d-flex justify-content-center">
+              <button type="submit" class="btn btn-roxo text-white">Enviar</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
   </div>
 
   <script src="js/scripts.min.js" crossorigin="anonymous"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/395c1bda-3074-4ee1-b1ca-17c469e49de4-loader.js"></script>
+
 </body>
 
 </html>
