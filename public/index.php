@@ -5,6 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
@@ -17,17 +18,17 @@
   <header>
     <div class="container">
       <div class="flex-row">
-        <nav class="navbar navbar-expand-lg d-flex justify-content-between">
-          <div class="col">
-            <a class="navbar-brand" href="#"><img src="images/marca-partner-bank.png" alt="Partner Bank" /></a>
+        <nav class="navbar navbar-expand-lg d-flex justify-content-between px-0">
+          <div class="col-6">
+            <a class="navbar-brand" href="#"><img src="images/marca-partner-bank.svg" alt="Partner Bank" /></a>
           </div>
 
-          <div class="col">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMobile" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
+          <div class="col-6">
+            <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMobile" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
               <span class="navbar-toggler-icon">
                 <img src="images/icone-menu.svg" alt="Menu mobile" width="32px" />
               </span>
-            </button>
+            </button>-->
 
             <div class="collapse navbar-collapse d-flex justify-content-end" id="navMobile">
               <div class="navbar-nav">
@@ -70,7 +71,7 @@
   <section id="institucional">
     <div class="container">
       <div class="row d-flex justify-content-center justify-content-md-between">
-        <div class="col-11 col-md-4 wow fadeInDown">
+        <div class="col-8 col-md-4 wow fadeInDown">
           <div class="instituiconal-imagem">
             <img src="images/marca-partner-bank-institucional.png" alt="Partner Bank" class="img-fluid mb-3 mb-md-0" />
           </div>
@@ -120,7 +121,7 @@
           </div>
         </div>
 
-        <div class="col-12 col-md-4 wow fadeInDown" data-wow-delay="1s">
+        <div class="col-12 col-md-4 wow fadeInDown" data-wow-delay="1.0s">
           <div class="box-beneficio d-flex justify-content-center align-items-center">
             <img src="images/icone-taxa0.svg" alt="#" />
             <p><strong>Taxa 0%</strong> nas baixas e alterações nos boletos</p>
@@ -180,40 +181,40 @@
 
       <div class="row d-flex justify-content-center">
         <div class="col-12 col-md-3 text-center box-equipe wow fadeInDown">
-          <img src="images/valter-gomes.png" alt="#" class="mb-0 mb-md-4">
+          <img src="images/valter-gomes.png" alt="Foto Valter Gomes" class="mb-0 mb-md-4">
           <h3>Valter Gomes</h3>
           <p>CEO</p>
-          <a href="#" title="Linkedin Valter Gomes"><img src="images/linkedin-logo.svg" alt="Linkedin" /></a>
+          <a href="https://www.linkedin.com/in/valtergomes/" target="_blank" title="Linkedin Valter Gomes"><img src="images/linkedin-logo.svg" alt="Linkedin" /></a>
         </div>
 
         <div class="col-12 col-md-3 text-center box-equipe wow fadeInDown" data-wow-delay=".2s">
-          <img src="images/rodrigo-monteiro.png" alt="#" class="mb-0 mb-md-4">
+          <img src="images/rodrigo-monteiro.png" alt="Foto Rodrigo Monteiro" class="mb-0 mb-md-4">
           <h3>Rodrigo Monteiro</h3>
           <p>Presidente do Conselho</p>
-          <a href="#" title="Linkedin Rodrigo Monteiro"><img src="images/linkedin-logo.svg" alt="Linkedin" /></a>
+          <a href="https://www.linkedin.com/in/rodrigomonteiro777/?originalSubdomain=br" target="_blank" title="Linkedin Rodrigo Monteiro"><img src="images/linkedin-logo.svg" alt="Linkedin" /></a>
         </div>
 
         <div class="col-12 col-md-3 text-center box-equipe wow fadeInDown" data-wow-delay=".4s">
-          <img src="images/danilo-frota.png" alt="#" class="mb-0 mb-md-4">
+          <img src="images/danilo-frota.png" alt="Foto Danilo Frota" class="mb-0 mb-md-4">
           <h3>Danilo Frota</h3>
           <p>CTO</p>
-          <a href="#" title="Linkedin Danilo Frota"><img src="images/linkedin-logo.svg" alt="Linkedin" /></a>
+          <a href="https://www.linkedin.com/in/danilolopesfrota/" target="_blank" title="Linkedin Danilo Frota"><img src="images/linkedin-logo.svg" alt="Linkedin" /></a>
         </div>
       </div>
 
       <div class="row d-flex justify-content-center">
         <div class="col-12 col-md-3 text-center box-equipe wow fadeInDown" data-wow-delay=".6s">
-          <img src="images/flavio-ribeiro.png" alt="#" class="mb-0 mb-md-4">
+          <img src="images/flavio-ribeiro.png" alt="Foto Flávio Ribeiro" class="mb-0 mb-md-4">
           <h3>Flávio Ribeiro</h3>
           <p>CIO</p>
-          <a href="#" title="Linkedin Flávio Ribeiro"><img src="images/linkedin-logo.svg" alt="Linkedin" /></a>
+          <a href="linkedin.com/in/flávio-ribeiro-2a925417/" target="_blank" title="Linkedin Flávio Ribeiro"><img src="images/linkedin-logo.svg" alt="Linkedin" /></a>
         </div>
 
         <div class="col-12 col-md-3 text-center box-equipe wow fadeInDown" data-wow-delay=".8s">
-          <img src="images/roberson-barros.png" alt="#" class="mb-0 mb-md-4">
+          <img src="images/roberson-barros.png" alt="Foto Roberson Barros" class="mb-0 mb-md-4">
           <h3>Roberson Barros</h3>
           <p>Conselheiro</p>
-          <a href="#" title="Linkedin Roberson Barros"><img src="images/linkedin-logo.svg" alt="Linkedin" /></a>
+          <a href="https://www.linkedin.com/in/roberson-barros-3158971/" target="_blank" title="Linkedin Roberson Barros"><img src="images/linkedin-logo.svg" alt="Linkedin" /></a>
         </div>
       </div>
     </div>
@@ -231,7 +232,7 @@
       <div class="row d-flex justify-content-center">
         <div class="col-12 col-md-6 text-center">
           <a type="button" class="btn btn-lg btn-outline-roxo mb-3 mb-md-0 wow fadeInDown" href="#" data-toggle="modal" data-target="#ModalContato">Quero conhecer</a>
-          <a type="button" class="btn btn-lg btn-outline-roxo mb-3 mb-md-0 wow fadeInDown" href="#" data-toggle="modal" data-target="#ModalParceria">Quero integrar meu ERP</a>
+          <a type="button" class="btn btn-lg btn-outline-roxo mb-3 mb-md-0 wow fadeInDown" href="#" data-toggle="modal" data-target="#ModalContato">Quero integrar meu ERP</a>
         </div>
       </div>
     </div>
