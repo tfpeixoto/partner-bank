@@ -207,7 +207,7 @@
           <img src="images/flavio-ribeiro.png" alt="Foto Flávio Ribeiro" class="mb-0 mb-md-4">
           <h3>Flávio Ribeiro</h3>
           <p>CIO</p>
-          <a href="linkedin.com/in/flávio-ribeiro-2a925417/" target="_blank" title="Linkedin Flávio Ribeiro"><img src="images/linkedin-logo.svg" alt="Linkedin" /></a>
+          <a href="https://www.linkedin.com/in/fl%C3%A1vio-ribeiro-2a925417/" target="_blank" title="Linkedin Flávio Ribeiro"><img src="images/linkedin-logo.svg" alt="Linkedin" /></a>
         </div>
 
         <div class="col-12 col-md-3 text-center box-equipe wow fadeInDown" data-wow-delay=".8s">
@@ -307,6 +307,23 @@
     new WOW().init();
   </script>
   <script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/395c1bda-3074-4ee1-b1ca-17c469e49de4-loader.js"></script>
+  <script type="text/javascript">
+    var $zoho = $zoho || {};
+    $zoho.salesiq = $zoho.salesiq || {
+      widgetcode: "19eabad5130e4f1a61288e54458efd2abe1e7772beb1905053a81971c7fe4755886a5fcb0a9e38100f30af78612c8ea8",
+      values: {},
+      ready: function() {}
+    };
+    var d = document;
+    s = d.createElement("script");
+    s.type = "text/javascript";
+    s.id = "zsiqscript";
+    s.defer = true;
+    s.src = " https://salesiq.zoho.com/widget";
+    t = d.getElementsByTagName("script")[0];
+    t.parentNode.insertBefore(s, t);
+    d.write("<div id='zsiqwidget'></div>");
+  </script>
 
 </body>
 
