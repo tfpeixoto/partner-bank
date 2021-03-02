@@ -7,8 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
 
+  <link rel="preload" href="fonts/fa-solid-900.woff" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/fa-solid-900.ttf" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/MyriadHebrew-Regular.woff" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/MyriadHebrew-Bold.woff" as="font" type="font/woff2" crossorigin="anonymous">
+
   <!-- CSS -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css" as="style" media="print" onload="this.media='all'; this.onload=null;" crossorigin>
   <link rel="stylesheet" href="css/libs/animate.css">
 
   <title>PartnerBank</title>
@@ -52,14 +58,14 @@
             <a class="navbar-brand" href="#topo"><img src="images/marca-partner-bank-branca.svg" height="57" width="158" alt="PartnerBank" /></a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMobile" aria-controls="navMobile" aria-expanded="false" aria-label="Alterna navegação">
-              <span class="navbar-toggler-icon"><img src="images/menu.svg" alt="Menu" /></span>
+              <span class="navbar-toggler-icon"><img src="images/menu.svg" height="30" width="34" alt="Menu" /></span>
             </button>
           </div>
 
           <div class="col-12 col-md-6">
             <div class="collapse navbar-collapse" id="navMobile">
               <div class="navbar-nav">
-                <a class="nav-item nav-link" href="https://desk.zoho.com/portal/contagroupboletos/signin#newticket" target="_blank">Área Restrita</a>
+                <a class="nav-item nav-link" href="https://desk.zoho.com/portal/partnerbank/pt/home" target="_blank">Área Restrita</a>
                 <a class="nav-item btn btn-outline-light" href="#" data-toggle="modal" data-target="#ModalErp">Conecte seu ERP</a>
                 <a class="nav-item btn btn-outline-light" href="https://materiais.partnerbank.com.br/conheca-o-partner-bank" target="_blank">Quero conhecer</a>
               </div>
@@ -96,7 +102,7 @@
       <div class="row d-flex justify-content-center justify-content-md-between">
         <div class="col-8 col-md-4 wow fadeInDown">
           <div class="instituiconal-imagem">
-            <img src="images/marca-partner-bank-institucional.png" alt="PartnerBank" class="img-fluid mb-3 mb-md-0" />
+            <img src="images/marca-partner-bank-institucional.png" heigth="99" width="299" alt="PartnerBank" class="img-fluid mb-3 mb-md-0" />
           </div>
         </div>
 
@@ -119,43 +125,43 @@
       <div class="row d-flex justify-content-center">
         <div class="col-12 col-md-4 wow fadeInDown" data-wow-delay=".2s">
           <div class="box-beneficio d-flex justify-content-center align-items-center">
-            <img src="images/icone-convenio.svg" alt="#" />
+            <img src="images/icone-convenio.svg" width="63" height="60" alt="Convênios" />
             <p>Abra <strong>convênios de forma totalmente automática</strong> sem a burocracia dos bancos</p>
           </div>
         </div>
 
         <div class="col-12 col-md-4 wow fadeInDown" data-wow-delay=".4s">
           <div class="box-beneficio d-flex justify-content-center align-items-center">
-            <img src="images/icone-automatiza.svg" alt="#" />
+            <img src="images/icone-automatiza.svg" width="80" height="64" alt="Automatize registros" />
             <p><strong>Automatize</strong> registros e baixas de boletos</p>
           </div>
         </div>
 
         <div class="col-12 col-md-4 wow fadeInDown" data-wow-delay=".6s">
           <div class="box-beneficio d-flex justify-content-center align-items-center">
-            <img src="images/icone-tarifa.svg" alt="#" />
+            <img src="images/icone-tarifa.svg" width="80" height="71" alt="Realize pagamentos de uma tarifa única" />
             <p>Realize o pagamento de uma <strong>única tarifa</strong>. Apenas na liquidação</p>
           </div>
         </div>
 
         <div class="col-12 col-md-4 wow fadeInDown" data-wow-delay=".8s">
           <div class="box-beneficio d-flex justify-content-center align-items-center">
-            <img src="images/icone-d1.svg" alt="#" />
+            <img src="images/icone-d1.svg" width="42" height="65" alt="Receba créditos dos boletos" />
             <p>Receba os créditos dos boletos em sua <strong>conta em D+1</strong></p>
           </div>
         </div>
 
         <div class="col-12 col-md-4 wow fadeInDown" data-wow-delay="1.0s">
           <div class="box-beneficio d-flex justify-content-center align-items-center">
-            <img src="images/icone-taxa0.svg" alt="#" />
+            <img src="images/icone-taxa0.svg" width="79" height="52" alt="Taxa zero baixas e alterações" />
             <p><strong>Taxa 0%</strong> nas baixas e alterações nos boletos</p>
           </div>
         </div>
 
         <div class="col-12 col-md-4 wow fadeInDown" data-wow-delay="1.2s">
           <div class="box-beneficio d-flex justify-content-center align-items-center">
-            <img src="images/icone-integracao.svg" alt="#" />
-            <p>100% integrado ao sistema <a href="https://www.groupsoftware.com.br/administracao-de-condominios/condominio21-online/" class="font-weight-bold" target="_blank">Condomínio21</a></p>
+            <img src="images/icone-integracao.svg" width="58" height="59" alt="Sistema integrado" />
+            <p>100% integrado ao sistema <a href="https://www.groupsoftware.com.br/administracao-de-condominios/condominio21/" class="font-weight-bold" target="_blank">Condomínio21</a></p>
           </div>
         </div>
       </div>
@@ -173,23 +179,69 @@
       <div class="row d-flex justify-content-around">
         <div class="col-10 col-md-3 text-center box-diferenciais wow fadeInDown">
           <div class="d-flex justify-content-center align-items-center mx-auto box-diferenciais-img">
-            <img src="images/icone-leis.svg" alt="#">
+            <img src="images/icone-leis.svg" width="82" height="82" alt="Conformidade com a legislação">
           </div>
           <p>Em conformidade com as leis, regulamentações bancárias e homologado pelo Banco Central. Confiança para fazer mais.</p>
         </div>
 
         <div class="col-10 col-md-3 text-center box-diferenciais wow fadeInDown" data-wow-delay=".2s">
           <div class="d-flex justify-content-center align-items-center mx-auto box-diferenciais-img">
-            <img src="images/icone-seguranca.svg" alt="#">
+            <img src="images/icone-seguranca.svg" width="75" height="83" alt="Tecnologia segura">
           </div>
           <p>Tecnologia segura e auditada para entregar resultados reais.</p>
         </div>
 
         <div class="col-10 col-md-3 text-center box-diferenciais wow fadeInDown" data-wow-delay=".4s">
           <div class="d-flex justify-content-center align-items-center mx-auto box-diferenciais-img">
-            <img src="images/icone-bc.svg" alt="#">
+            <img src="images/icone-bc.svg" width="78" height="80" alt="Cadastrada no banco central">
           </div>
           <p>Somos uma instituição de pagamento cadastrada no Banco Central.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="parcele">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-4 d-flex justify-content-start">
+          <img src="images/parcele-boletos.png" width="480" height="480" class="img-fluid" alt="Parcele seus boletos" />
+        </div>
+
+        <div class="col-12 col-md-8 d-flex align-items-center">
+          <div class="container">
+            <div class="row d-flex justify-content-center">
+              <div class="col-8 mb-5">
+                <h2 class="text-roxo text-center">Parcele já seus boletos</h2>
+                <p class="lead text-roxo text-center">Você sabia que agora os boletos emitidos pelo PartnerBank podem ser parcelados no cartão de crédito? Veja como é simples.</p>
+              </div>
+            </div>
+
+            <div class="row d-flex justify-content-start text-center text-roxo">
+              <div class="col-12 col-md-3 wow fadeInDown" data-wow-delay=".2s">
+                <img src="images/portal-pagamento-boleto.svg" width="91" height="91" class="mb-3" alt="Acesse o portal" />
+                <p>Acesse o portal</p>
+              </div>
+              <div class="col-12 col-md-3 wow fadeInDown" data-wow-delay=".4s">
+                <img src="images/codigo-barras-boleto.svg" width="100" height="100" class="mb-3" alt="Digite código de barras" />
+                <p>Digite o código de barras do boleto</p>
+              </div>
+              <div class="col-12 col-md-3 wow fadeInDown" data-wow-delay=".6s">
+                <img src="images/pacele-boleto-12-vezes.svg" width="152" height="90" class="mb-3" alt="Defina parcelas" />
+                <p>Defina a quantidade de parcelas</p>
+              </div>
+              <div class="col-12 col-md-3 wow fadeInDown" data-wow-delay=".8s">
+                <img src="images/pagamento-boleto.svg" width="95" height="95" class="mb-3" alt="Efetue o pagamento" />
+                <p>Efetue o pagamento do seu boleto</p>
+              </div>
+            </div>
+
+            <div class="row d-flex justify-content-center mt-5">
+              <div class="col-12 mb-5 d-flex justify-content-center">
+                <a type="button" href="https://www.partnerbank.com.br/credito" class="btn btn-lg btn-roxo px-5 text-amarelo" target="_blank">Acesse agora</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -376,53 +428,41 @@
     </div>
   </section>
 
-  <section id="parcele">
-    <div class="container-fluid">
+  <section class="depoimentos">
+    <div class="container">
       <div class="row">
-        <div class="col-12 col-md-4 d-flex justify-content-start">
-          <img src="images/parcele-boletos.png" class="img-fluid" alt="Parcele seus boletos" />
+        <div class="col-12 text-center">
+          <h2 class="text-amarelo mb-5">O que dizem os nossos clientes</h2>
+        </div>
+      </div>
+        
+      <div class="row">
+        <div class="col-12 col-md-4 d-flex align-items-center justify-content-center wow fadeInLeft">
+          <img src="images/foto-denise-arns.png" width="240" height="240" alt="Denise Arns - Diretora ADC Condomínios" title="Denise Arns" />
         </div>
 
-        <div class="col-12 col-md-8 d-flex align-items-center">
-          <div class="container">
-            <div class="row d-flex justify-content-center">
-              <div class="col-8 mb-5">
-                <h2 class="text-roxo text-center">Parcele já seus boletos</h2>
-                <p class="lead text-roxo text-center">Você sabia que agora os boletos emitidos pelo PartnerBank podem ser parcelados no cartão de crédito? Veja como é simples.</p>
-              </div>
-            </div>
+        <div class="col-12 col-md-8 wow fadeInRight">
+          <div class="depoimentos__texto text-center text-md-left">
+            <p>Gostaria de compartilhar a experiência da ADC Condomínios com a parceria ao Partner Bank. Faz um ano que iniciamos a utilização e só há pontos positivos a relatar.</p>
+  
+            <p>Otimizou toda a parte de retorno dos pagamentos, que antes era feito manualmente. A rapidez no registro dos boletos viabilizou o pagamento logo após a emissão. O crédito em conta no dia seguinte ao pagamento foi um benefício fundamental para atender a rotina financeira dos condomínios. Sem contar o atendimento da equipe que é maravilhoso, muito atenciosos e sempre disponíveis para auxiliar.</p>
+              
+            <p>Super recomendado para facilitar o trabalho e adquirir um diferencial a mais à empresa, que reflete diretamente ao cliente!</p>
+  
+            <p>Obrigada equipe Partner Bank!</p>
+          </div>
 
-            <div class="row d-flex justify-content-start text-center text-roxo">
-              <div class="col-12 col-md-3 wow fadeInDown" data-wow-delay=".2s">
-                <img src="images/portal-pagamento-boleto.svg" class="mb-3" alt="Acesse o portal" />
-                <p>Acesse o portal</p>
-              </div>
-              <div class="col-12 col-md-3 wow fadeInDown" data-wow-delay=".4s">
-                <img src="images/codigo-barras-boleto.svg" class="mb-3" alt="Acesse o portal" />
-                <p>Digite o código de barras do boleto</p>
-              </div>
-              <div class="col-12 col-md-3 wow fadeInDown" data-wow-delay=".6s">
-                <img src="images/pacele-boleto-12-vezes.svg" class="mb-3" alt="Acesse o portal" />
-                <p>Defina a quantidade de parcelas</p>
-              </div>
-              <div class="col-12 col-md-3 wow fadeInDown" data-wow-delay=".8s">
-                <img src="images/pagamento-boleto.svg" class="mb-3" alt="Acesse o portal" />
-                <p>Efetue o pagamento do seu boleto</p>
-              </div>
-            </div>
-
-            <div class="row d-flex justify-content-center mt-5">
-              <div class="col-12 mb-5 d-flex justify-content-center">
-                <a type="button" href="https://www.partnerbank.com.br/credito" class="btn btn-lg btn-roxo px-5 text-amarelo" target="_blank">Acesse agora</a>
-              </div>
-            </div>
+          <div class="depoimentos__pessoa">
+            <p class="depoimentos__pessoa__nome">Denise Arns<br />
+            <span class="depoimentos__pessoa__cargo">Diretora ADC Condomínios</span></p>
           </div>
         </div>
+        
       </div>
     </div>
   </section>
 
-  <section id="equipe">
+  <!-- <section id="equipe">
     <div class="container">
       <div class="row d-flex justify-content-center">
         <div class="col-12 col-md-6 text-center mb-5">
@@ -435,41 +475,41 @@
           <img src="images/valter-gomes.png" alt="Foto Valter Gomes" class="mb-0 mb-md-1">
           <h3>Valter Gomes</h3>
           <p>CEO</p>
-          <a href="https://www.linkedin.com/in/valtergomes/" target="_blank" title="Linkedin Valter Gomes"><img src="images/linkedin-logo.svg" alt="Linkedin" /></a>
+          <a href="https://www.linkedin.com/in/valtergomes/" width="215" height="215" target="_blank" title="Linkedin Valter Gomes"><img src="images/linkedin-logo.svg" width="24" height="24" alt="Linkedin Valter Gomes" /></a>
         </div>
 
         <div class="col-12 col-md-3 text-center box-equipe wow fadeInDown" data-wow-delay=".2s">
-          <img src="images/rodrigo-monteiro.png" alt="Foto Rodrigo Monteiro" class="mb-0 mb-md-1">
+          <img src="images/rodrigo-monteiro.png" width="215" height="215" alt="Foto Rodrigo Monteiro" class="mb-0 mb-md-1">
           <h3>Rodrigo Monteiro</h3>
           <p>Presidente do Conselho</p>
-          <a href="https://www.linkedin.com/in/rodrigomonteiro777/?originalSubdomain=br" target="_blank" title="Linkedin Rodrigo Monteiro"><img src="images/linkedin-logo.svg" alt="Linkedin" /></a>
+          <a href="https://www.linkedin.com/in/rodrigomonteiro777/?originalSubdomain=br" width="215" height="215" target="_blank" title="Linkedin Rodrigo Monteiro"><img src="images/linkedin-logo.svg" width="24" height="24" alt="Linkedin Rodrigo Monteiro" /></a>
         </div>
 
         <div class="col-12 col-md-3 text-center box-equipe wow fadeInDown" data-wow-delay=".4s">
           <img src="images/danilo-frota.png" alt="Foto Danilo Frota" class="mb-0 mb-md-1">
           <h3>Danilo Frota</h3>
           <p>CTO</p>
-          <a href="https://www.linkedin.com/in/danilolopesfrota/" target="_blank" title="Linkedin Danilo Frota"><img src="images/linkedin-logo.svg" alt="Linkedin" /></a>
+          <a href="https://www.linkedin.com/in/danilolopesfrota/" width="215" height="215" target="_blank" title="Linkedin Danilo Frota"><img src="images/linkedin-logo.svg" width="24" height="24" alt="Linkedin Danilo Frota" /></a>
         </div>
       </div>
 
       <div class="row d-flex justify-content-center">
         <div class="col-12 col-md-3 text-center box-equipe wow fadeInDown" data-wow-delay=".6s">
-          <img src="images/flavio-ribeiro.png" alt="Foto Flávio Ribeiro" class="mb-0 mb-md-1">
+          <img src="images/flavio-ribeiro.png" width="215" height="215" alt="Foto Flávio Ribeiro" class="mb-0 mb-md-1">
           <h3>Flávio Ribeiro</h3>
           <p>CIO</p>
-          <a href="https://www.linkedin.com/in/fl%C3%A1vio-ribeiro-2a925417/" target="_blank" title="Linkedin Flávio Ribeiro"><img src="images/linkedin-logo.svg" alt="Linkedin" /></a>
+          <a href="https://www.linkedin.com/in/fl%C3%A1vio-ribeiro-2a925417/" target="_blank" title="Linkedin Flávio Ribeiro"><img src="images/linkedin-logo.svg" width="24" height="24" alt="Linkedin Flávio Ribeiro" /></a>
         </div>
 
         <div class="col-12 col-md-3 text-center box-equipe wow fadeInDown" data-wow-delay=".8s">
-          <img src="images/roberson-barros.png" alt="Foto Roberson Barros" class="mb-0 mb-md-1">
+          <img src="images/roberson-barros.png" width="215" height="215" alt="Foto Roberson Barros" class="mb-0 mb-md-1">
           <h3>Roberson Barros</h3>
           <p>Conselheiro</p>
-          <a href="https://www.linkedin.com/in/roberson-barros-3158971/" target="_blank" title="Linkedin Roberson Barros"><img src="images/linkedin-logo.svg" alt="Linkedin" /></a>
+          <a href="https://www.linkedin.com/in/roberson-barros-3158971/" target="_blank" title="Linkedin Roberson Barros"><img src="images/linkedin-logo.svg" width="24" height="24" alt="Linkedin Roberson Barros" /></a>
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <section id="cta">
     <div class="container">
@@ -493,7 +533,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12 col-md-6 d-flex justify-content-center align-items-center my-5 wow fadeInDown">
-          <img src="images/mapa-sao-paulo.svg" alt="Mapa de São Paulo" class="mr-3" />
+          <img src="images/mapa-sao-paulo.svg" width="160" height="107" alt="Mapa de São Paulo" class="mr-3" />
           <p class="text-roxo"><strong>São Paulo</strong><br />
             Rua Álvaro Anes, 56<br />
             8º andar . Pinheiros<br />
@@ -503,7 +543,7 @@
         </div>
 
         <div class="col-12 col-md-6 d-flex justify-content-center align-items-center wow fadeInDown" data-wow-delay=".2s">
-          <img src="images/mapa-minas-gerais.svg" alt="Mapa de Minas Gerais" class="mr-3" />
+          <img src="images/mapa-minas-gerais.svg" width="160" height="124" alt="Mapa de Minas Gerais" class="mr-3" />
           <p class="text-roxo"><strong>Belo Horizonte</strong><br />
             Rua Santa Catarina, 1631<br />
             8º andar . Lourdes<br />
@@ -516,7 +556,7 @@
       <div class="row">
         <div class="col-12">
           <hr />
-          <p class="text-roxo text-center">© Copyright 2020 PartnerBank . Todos os direitos reservados</p>
+          <p class="text-roxo text-center">© Copyright 2020 PartnerBank . Todos os direitos reservados . <a href="https://privacyportal.onetrust.com/webform/3d269afb-0756-49f7-b945-1847083fe911/9ae01ec2-0ba4-41ab-b471-03a2653b649e" class="text-amarelo" target="_blank" title="Lei Geral de Proteção de Dados">Fale com a DPO</a></p>
         </div>
       </div>
     </div>
