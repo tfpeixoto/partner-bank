@@ -28,10 +28,14 @@ body {
 
   // header
   header {
-    &.fixed-top {
-      background: rgba($black, 0.75);
-      position: fixed;
-      top: 0;
+    position: fixed;
+    margin: 0 auto;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+
+    &.fixed {
+      background: rgba($roxo, 0.85);
     }
     .navbar-toggler {
       float: right;
@@ -44,7 +48,6 @@ body {
         float: right;
       }
       .navbar-nav {
-        background: rgba($black, 0.8);
         border-radius: 5px;
         margin-top: 10px;
         padding: 20px;
@@ -125,15 +128,13 @@ body {
     background-position: 75% center;
     height: 550px;
     padding: 150px 0;
-    position: absolute;
-    top: 0;
+    position: relative;
     width: 100%;
     z-index: -1;
 
     @include media-breakpoint-up(md) {
       background-position: center center;
     }
-
     h1 {
       font-family: MyriadHebrewBold, sans-serif;
       font-weight: 700;
@@ -147,13 +148,82 @@ body {
     }
   }
 
+  // depoimentos
+  .depoimentos {
+    background: $roxo;
+    color: $white;
+
+    &__box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0 auto;
+      width: 90%;
+
+      @include media-breakpoint-up(md) {
+        flex-direction: row;
+      }
+
+      &__foto {
+        display: flex;
+        justify-content: center;
+        height: auto;
+        min-width: 250px;
+
+        @include media-breakpoint-up(md) {
+          align-items: center;
+        }
+
+        img {
+          border-radius: 100%;
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+          height: 240px;
+          max-width: 240px;
+
+          @include media-breakpoint-up(md) {
+            margin-right: 2rem;
+          }
+        }
+      }
+
+      &__texto {
+        text-align: center;
+
+        @include media-breakpoint-up(md) {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          text-align: left;
+        }
+
+        h3 {
+          color: $amarelo;
+          font-weight: 700;
+          font-size: 1.5rem;
+          line-height: 1.2;
+          margin: 2rem 0 0 0;
+        }
+      }
+    }
+
+    /* purgecss start ignore */
+    .owl-nav {
+      button {
+        .owl-next,
+        .owl-prev {
+          background: rgba(0, 0, 0, 0.2);
+          border-radius: 5px;
+          color: $amarelo;
+          font-size: 50px;
+          padding: 0 15px;
+        }
+      }
+    }
+    /* purgecss end ignore */
+  }
+
   // frase
   #frase {
-    margin-top: 425px;
-
-    @include media-breakpoint-up(md) {
-      margin-top: 425px;
-    }
     p {
       color: $roxo;
     }
@@ -257,31 +327,6 @@ body {
       }
       p {
         color: $roxo;
-      }
-    }
-  }
-
-  // depoimentos
-  .depoimentos {
-    background: $roxo;
-    color: $white;
-
-    img {
-      border-radius: 100%;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    }
-    &__pessoa {
-      margin-top: 2rem;
-
-      &__nome {
-        color: $amarelo;
-        font-weight: 700;
-        font-size: 1.5rem;
-        line-height: 1.2;
-      }
-      &__cargo {
-        color: $white;
-        font-size: 1.2rem;
       }
     }
   }

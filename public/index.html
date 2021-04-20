@@ -11,8 +11,17 @@
   <link rel="preload" href="fonts/MyriadHebrew-Bold.woff" as="font" type="font/woff2" crossorigin="anonymous">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="css/style.css" as="style" media="print" onload="this.media='all'; this.onload=null;" crossorigin>
-  <link rel="stylesheet" href="css/libs/animate.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/components/animate.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    .owl-prev, .owl-next{
+      color: #E3C862 !important;
+      font-size: 50px !important;
+    }
+  </style>
 
   <title>PartnerBank - O jeito simples e seguro de cuidar dos seus serviços bancários</title>
 
@@ -33,7 +42,6 @@
     src="https://www.facebook.com/tr?id=244585623195343&ev=PageView&noscript=1"
   /></noscript>
   <!-- End Facebook Pixel Code -->
-
 </head>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -47,32 +55,32 @@
   </script>
 
 <body>
+  <!-- header -->
   <header id="topo">
     <div class="container">
-      <div class="flex-row">
-        <nav class="navbar navbar-expand-lg d-flex justify-content-between px-0">
-          <div class="col-12 col-md-6">
-            <a class="navbar-brand" href="#topo"><img src="images/marca-partner-bank-branca.svg" height="57" width="158" alt="PartnerBank" /></a>
+      <nav class="navbar navbar-expand-lg">
+        <div class="col-12 col-md-6">
+          <a class="navbar-brand" href="#topo"><img src="images/marca-partner-bank-branca.svg" height="57" width="158" alt="PartnerBank" /></a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMobile" aria-controls="navMobile" aria-expanded="false" aria-label="Alterna navegação">
-              <span class="navbar-toggler-icon"><img src="images/menu.svg" height="30" width="34" alt="Menu" /></span>
-            </button>
-          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMobile" aria-controls="navMobile" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"><img src="images/menu.svg" height="30" width="34" alt="Menu" /></span>
+          </button>
+        </div>
 
-          <div class="col-12 col-md-6">
-            <div class="collapse navbar-collapse" id="navMobile">
-              <div class="navbar-nav">
-                <a class="nav-item nav-link" href="https://desk.zoho.com/portal/partnerbank/pt/home" target="_blank">Área Restrita</a>
-                <a class="nav-item btn btn-outline-light" href="#" data-toggle="modal" data-target="#ModalErp">Conecte seu ERP</a>
-                <a class="nav-item btn btn-outline-light" href="https://materiais.partnerbank.com.br/conheca-o-partner-bank" target="_blank">Quero conhecer</a>
-              </div>
+        <div class="col-12 col-md-6">
+          <div class="collapse navbar-collapse" id="navMobile">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link" href="https://desk.zoho.com/portal/partnerbank/pt/home" target="_blank">Área Restrita</a>
+              <a class="nav-item btn btn-outline-light" href="#" data-toggle="modal" data-target="#ModalErp">Conecte seu ERP</a>
+              <a class="nav-item btn btn-outline-light" href="https://materiais.partnerbank.com.br/conheca-o-partner-bank" target="_blank">Quero conhecer</a>
             </div>
           </div>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </div>
   </header>
 
+  <!-- banners -->
   <section id="banner">
     <div class="container">
       <div class="row d-flex justify-content-start align-items-center">
@@ -84,6 +92,55 @@
     </div>
   </section>
 
+  <!-- depoimentos -->
+  <section class="depoimentos">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="text-amarelo mb-5">O que dizem os nossos clientes</h2>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="owl-carousel owl-theme">
+          <div class="depoimentos__box">
+            <div class="depoimentos__box__foto">
+              <img src="images/foto-denise-arns.png" width="240" height="240" class="my-2" alt="Denise Arns - Diretora ADC Condomínios" title="Denise Arns" />
+            </div>
+
+            <div class="depoimentos__box__texto">
+              <p>"Faz um ano que iniciamos a utilização e só há pontos positivos a relatar. A PartnerBank otimizou toda a parte de retorno dos pagamentos, que antes era manual. A rapidez no registro dos boletos viabilizou o pagamento logo após a emissão. O crédito em conta no dia seguinte ao pagamento foi um benefício fundamental para atender a rotina financeira dos condomínios. Sem contar o atendimento da equipe que é maravilhoso, muito atenciosos e sempre disponíveis para auxiliar.</p>
+
+              <p>Super recomendado para facilitar o trabalho e adquirir um diferencial a mais à empresa, que reflete diretamente ao cliente. Obrigada equipe Partner Bank!"</p>
+
+              <h3>Denise Arns</h3>
+              <p class="cargo">Diretora ADC Condomínios</p>
+            </div>
+          </div>
+
+          <div class="depoimentos__box">
+            <div class="depoimentos__box__foto">
+              <img src="images/renata-mellem.jpg" width="240" height="240" class="my-2" alt="Denise Arns - Diretora ADC Condomínios" title="Denise Arns" />
+            </div>
+
+            <div class="depoimentos__box__texto">
+              <p>"Com a implantação do PartnerBank no início do ano de 2020 automatizamos 90% dos processos do Contas a Receber. Isso fez com que nossos colaboradores  ficassem mais focados na qualidade da nossa prestação de serviços.</p>
+              <p>Os resultados foram imediatos! Hoje, não são necessários os processos manuais e diários de atualização do nosso sistema financeiro e ter o sistema atualizado automaticamente reflete na agilidade das informações financeiras e de cobrança.</p>
+              <p>O crédito automático do valor financeiro na conta individualiza em D+1 foi um recurso essencial para a habilitação aos nossos clientes e os relatórios de recebimentos são detalhados e transparentes, o que garante a transparência financeira da gestão.</p>
+              <p>O suporte é rápido e eficaz, com atendentes atenciosos e sempre dispostos a nos auxiliar nas demandas.</p>
+              <p>Recomento a integração com o sistema financeiro da sua empresa.</p>
+              <p>Com o Partnerbank você vai garantir uma automatização que só tende a somar e agregar valor aos seus processos operacionais. Agradeço toda a equipe do Partnerbank."</p>
+
+              <h3>Renata Mellem</h3>
+              <p class="cargo">Administradora Élis Administradora de Condomínios</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- frase -->
   <section id="frase">
     <div class="container">
       <div class="row d-flex justify-content-center">
@@ -94,6 +151,7 @@
     </div>
   </section>
 
+  <!-- institucional -->
   <section id="institucional">
     <div class="container">
       <div class="row d-flex justify-content-center justify-content-md-between">
@@ -111,6 +169,7 @@
     </div>
   </section>
 
+  <!-- beneficios -->
   <section id="beneficios">
     <div class="container">
       <div class="row d-flex justify-content-center">
@@ -165,6 +224,7 @@
     </div>
   </section>
 
+  <!-- diferenciais -->
   <section id="diferenciais">
     <div class="container">
       <div class="row d-flex justify-content-center">
@@ -198,6 +258,7 @@
     </div>
   </section>
 
+  <!-- parcelamento -->
   <section id="parcele">
     <div class="container-fluid">
       <div class="row">
@@ -244,6 +305,7 @@
     </div>
   </section>
 
+  <!-- faq -->
   <section id="faq" class="bg-amarelo">
     <div class="container">
       <div class="row d-flex justify-content-center">
@@ -425,40 +487,7 @@
     </div>
   </section>
 
-  <section class="depoimentos">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h2 class="text-amarelo mb-5">O que dizem os nossos clientes</h2>
-        </div>
-      </div>
-        
-      <div class="row">
-        <div class="col-12 col-md-4 d-flex align-items-center justify-content-center wow fadeInLeft">
-          <img src="images/foto-denise-arns.png" width="240" height="240" class="my-2" alt="Denise Arns - Diretora ADC Condomínios" title="Denise Arns" />
-        </div>
-
-        <div class="col-12 col-md-8 wow fadeInRight">
-          <div class="depoimentos__texto text-center text-md-left">
-            <p>Gostaria de compartilhar a experiência da ADC Condomínios com a parceria ao Partner Bank. Faz um ano que iniciamos a utilização e só há pontos positivos a relatar.</p>
-  
-            <p>Otimizou toda a parte de retorno dos pagamentos, que antes era feito manualmente. A rapidez no registro dos boletos viabilizou o pagamento logo após a emissão. O crédito em conta no dia seguinte ao pagamento foi um benefício fundamental para atender a rotina financeira dos condomínios. Sem contar o atendimento da equipe que é maravilhoso, muito atenciosos e sempre disponíveis para auxiliar.</p>
-              
-            <p>Super recomendado para facilitar o trabalho e adquirir um diferencial a mais à empresa, que reflete diretamente ao cliente!</p>
-  
-            <p>Obrigada equipe Partner Bank!</p>
-          </div>
-
-          <div class="depoimentos__pessoa">
-            <p class="depoimentos__pessoa__nome">Denise Arns<br />
-            <span class="depoimentos__pessoa__cargo">Diretora ADC Condomínios</span></p>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-  </section>
-
+  <!-- cta -->
   <section id="cta">
     <div class="container">
       <div class="row d-flex justify-content-center">
@@ -477,6 +506,7 @@
     </div>
   </section>
 
+  <!-- footer -->
   <footer>
     <div class="container">
       <div class="row">
@@ -593,9 +623,40 @@
   </div>
 
   <script src="js/scripts.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" crossorigin="anonymous"></script>
   <script>
+    // Owl
+    $(document).ready(function () {
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        nav: true,
+        dots: false,
+        items: 1,
+      });
+    });
+
+    // Navbar Fixed  
+    function navbarFixed() {
+      if ($('header').length) {
+        $(window).on('scroll', function () {
+          var scroll = $(window).scrollTop();
+          if (scroll) {
+            $("header").addClass("fixed");
+          } else {
+            $("header").removeClass("fixed");
+          }
+        });
+      };
+    };
+    navbarFixed();
+
+    // Wow
     new WOW().init();
 
+    // Modal
     $('#formSite').submit(function(e) {
       e.preventDefault();
       $('#retornoConhecer').fadeIn(500).delay(5000).fadeOut(500);
@@ -604,6 +665,7 @@
       }, 6000);
     });
 
+    // Modal
     $('#formErp').submit(function(e) {
       e.preventDefault();
       $('#retornoERP').fadeIn(500).delay(5000).fadeOut(500);
@@ -612,9 +674,7 @@
       }, 6000);
     });
 
-  </script>
-  <script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/395c1bda-3074-4ee1-b1ca-17c469e49de4-loader.js"></script>
-  <script type="text/javascript">
+    // Zoho
     var $zoho = $zoho || {};
     $zoho.salesiq = $zoho.salesiq || {
       widgetcode: "19eabad5130e4f1a61288e54458efd2abe1e7772beb1905053a81971c7fe4755886a5fcb0a9e38100f30af78612c8ea8",
@@ -631,5 +691,7 @@
     t.parentNode.insertBefore(s, t);
     d.write("<div id='zsiqwidget'></div>");
   </script>
+
+  <script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/395c1bda-3074-4ee1-b1ca-17c469e49de4-loader.js"></script>
 </body>
 </html>

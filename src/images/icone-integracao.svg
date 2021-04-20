@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58.063" height="59" viewBox="0 0 58.063 59">
-  <defs>
-    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#e3c862"/>
-      <stop offset="1" stop-color="#c59165"/>
-    </linearGradient>
-  </defs>
-  <path id="icone-integracao" d="M53.889,6.333a29.028,29.028,0,1,1-33.738.012,2.818,2.818,0,0,1,4.1.9l1.85,3.289a2.808,2.808,0,0,1-.773,3.629,19.665,19.665,0,1,0,23.4-.012,2.793,2.793,0,0,1-.761-3.617l1.85-3.289a2.806,2.806,0,0,1,4.074-.913ZM41.714,30.9V2.81A2.8,2.8,0,0,0,38.9,0H35.159a2.8,2.8,0,0,0-2.81,2.81V30.9a2.8,2.8,0,0,0,2.81,2.81H38.9A2.8,2.8,0,0,0,41.714,30.9Z" transform="translate(-8)" fill="url(#linear-gradient)"/>
-</svg>
