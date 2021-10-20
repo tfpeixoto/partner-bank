@@ -1,31 +1,44 @@
+// cores antigas
 $roxo: #313751;
-$amarelo: #E3C862;
+$amarelo: #e3c862;
+
+//novas cores
+$egg: #00dad9;
+$azure: #01a8f7;
+$science: #0075d5;
+$eminence: #662d91;
+$downriver: #091549;
 
 $theme-colors: (
-    "roxo": $roxo,
-    "amarelo": $amarelo,
+  "roxo": $roxo,
+  "amarelo": $amarelo,
+  "egg": $egg,
+  "azure": $azure,
+  "science": $science,
+  "eminence": $eminence,
+  "downriver": $downriver,
 );
 
 @font-face {
-    font-family: "MyriadHebrewBold";
-    src: url(../fonts/MyriadHebrew-Bold.woff);
-    font-weight: bold;
+  font-family: "MyriadHebrewBold";
+  src: url(../fonts/MyriadHebrew-Bold.woff);
+  font-weight: bold;
 }
 @font-face {
-    font-family: "MyriadHebrewBoldItalic";
-    src: url(../fonts/MyriadHebrew-BoldIt.woff);
-    font-style: italic;
-    font-weight: bold;
+  font-family: "MyriadHebrewBoldItalic";
+  src: url(../fonts/MyriadHebrew-BoldIt.woff);
+  font-style: italic;
+  font-weight: bold;
 }
 @font-face {
-    font-family: "MyriadHebrewItalic";
-    src: url(../fonts/MyriadHebrew-It.woff);
-    font-style: italic;
+  font-family: "MyriadHebrewItalic";
+  src: url(../fonts/MyriadHebrew-It.woff);
+  font-style: italic;
 }
 @font-face {
-    font-family: "Myriad Hebrew";
-    src: url(../fonts/MyriadHebrew-Regular.woff);
-    font-weight: normal;
+  font-family: "Myriad Hebrew";
+  src: url(../fonts/MyriadHebrew-Regular.woff);
+  font-weight: normal;
 }
 
 $body-bg: #fff;

@@ -38,9 +38,10 @@ gulp.task('sass', function () {
 gulp.task('js', function () {
   return gulp.src([
     'node_modules/jquery/dist/jquery.min.js',
-    'node_modules/popper.js/dist/popper.min.js',
+    'node_modules/popper.js/popper.min.js',
     'node_modules/bootstrap/dist/js/bootstrap.min.js',
-    'node_modules/wow.js/dist/wow.js'])
+    'node_modules/owl.carousel/dist/owl.carousel.min.js',
+    'node_modules/wow.js/dist/wow.min.js'])
     .pipe(concat('scripts.js'))
     .pipe(gulp.dest('src/js'))
     .pipe(rename('scripts.min.js'))
