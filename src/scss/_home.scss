@@ -34,6 +34,9 @@ body {
     width: 100%;
     z-index: 10;
 
+    @include media-breakpoint-down(sm) {
+      background: rgba($downriver, 0.85);
+    }
     &.fixed {
       background: rgba($downriver, 0.85);
     }
@@ -79,6 +82,7 @@ body {
             background: $azure;
             border: none;
             color: $white;
+            padding: .5rem 1rem;
 
             &:hover {
               background: $science;
@@ -258,6 +262,11 @@ body {
 
         &:hover {
           opacity: 0.75;
+        }
+        &.owl-prev,
+        &.owl-next{
+          color: #01a8f7 !important;
+          font-size: 50px !important;
         }
       }
     }
