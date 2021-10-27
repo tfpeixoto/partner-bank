@@ -82,7 +82,7 @@ body {
             background: $azure;
             border: none;
             color: $white;
-            padding: .5rem 1rem;
+            padding: 0.5rem 1rem;
 
             &:hover {
               background: $science;
@@ -142,7 +142,6 @@ body {
   // banner
   #banner {
     background-color: $downriver;
-    height: 550px;
     top: 0;
     position: relative;
     padding: 0;
@@ -151,11 +150,24 @@ body {
     @include media-breakpoint-up(md) {
       background-position: center center;
     }
+    // banners paginas internas
+    &.interno{
+      background: linear-gradient(
+        180deg,
+        rgb(26, 46, 136) 0%,
+        rgb(5, 19, 82) 100%
+      );
+      min-height: 400px;
+
+      h1{
+        font-weight: 700;
+      }
+    }
     .carousel-item {
       .carousel-caption {
         bottom: 20%;
         padding-left: 1rem;
-        
+
         @include media-breakpoint-up(md) {
           width: 40%;
         }
@@ -182,6 +194,56 @@ body {
             font-size: 1.5rem;
           }
         }
+      }
+    }
+  }
+
+  // conteudo paginas internas
+  .conteudo{
+    h2{
+      font-size: 2rem;
+      color: $downriver;
+      margin-top: 2rem;
+    }
+    h3{
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: $downriver;
+      margin-top: 1.5rem;
+    }
+  }
+
+  // conta digital
+  .c-digital {
+    &__icon{
+      margin-bottom: 1rem;
+      text-align: center;
+
+      @include media-breakpoint-up(md) {
+        margin-bottom: 0;
+      }
+    }
+
+    &__content {
+      margin-bottom: 1rem;
+      text-align: center;
+
+      @include media-breakpoint-up(md) {
+        margin-bottom: 0;
+      }
+      h2 {
+        color: $downriver;
+        line-height: 1;
+      }
+      .lead{
+        margin-bottom: 0;
+      }
+    }
+
+    &__cta{
+      .btn{
+        line-height: 1.1;
+        padding: 1.25rem;
       }
     }
   }
@@ -265,7 +327,7 @@ body {
           opacity: 0.75;
         }
         &.owl-prev,
-        &.owl-next{
+        &.owl-next {
           color: #01a8f7 !important;
           font-size: 50px !important;
         }
