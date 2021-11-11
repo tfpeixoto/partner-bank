@@ -1,58 +1,85 @@
 var
-gulp = require('gulp');
+  gulp = require('gulp');
 browserSync = require('browser-sync');
 sass = require('gulp-sass');
-// imagemin = require('gulp-imagemin');
+imagemin = require('gulp-imagemin');
+purgecss = require('gulp-purgecss');
 concat = require('gulp-concat');
 rename = require('gulp-rename');
 uglify = require('gulp-uglify-es').default;
 
+// CONSTANTES
+const dir = {
+  src: 'public/gulp',
+  node: 'node_modules',
+  build: 'public'
+}
+
+// BROWSER SYNC
 gulp.task('browser-sync', function () {
-  var files = ["public/*.html", 'src/scss/**/*.css', 'src/js/**/*.js'];
+  var files = [
+    `${dir.build}/*.html`,
+    `${dir.build}/css/*.css`,
+    `${dir.build}/js/**/*.js`
+  ];
 
   browserSync.init(files, {
-    proxy: "http://localhost/partner-bank/public",
+    proxy: 'http://localhost/partner-bank/public',
     notify: true,
   });
 });
 
+// SASS
 gulp.task('sass', function () {
-  return gulp.src(['src/scss/*.scss'])
+  return gulp.src([`${dir.src}/scss/*.scss`])
     .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
-    .pipe(gulp.dest('public/css'))
+    .pipe(gulp.dest(`${dir.src}/css`))
 });
 
-/* Imagens */
-// gulp.task('imagemin', function () {
-//   return gulp.src('gulp/images/**/*')
-//     .pipe(imagemin({
-//       progressive: true,
-//       svgoPlugins: [
-//         { removeViewBox: false },
-//         { cleanupIDs: false }
-//       ]
-//     }))
-//     .pipe(gulp.dest('images/'))
-// });
+// PURGECSS
+gulp.task('purgecss', ['sass'], function () {
+  return gulp.src(`${dir.src}/css/*.css`)
+    .pipe(purgecss({
+      content: [`${dir.build}/*.html`],
+      whitelist: [],
+      whitelistPatterns: []
+    }))
+    .pipe(gulp.dest(`${dir.build}/css`))
+});
 
+// IMAGEMIN
+gulp.task('imagemin', function () {
+  return gulp.src(`${dir.src}/images/**/*`)
+    .pipe(imagemin({
+      progressive: true,
+      svgoPlugins: [
+        { removeViewBox: false },
+        { cleanupIDs: false }
+      ]
+    }))
+    .pipe(gulp.dest(`${dir.build}/images`))
+});
+
+// JS
 gulp.task('js', function () {
   return gulp.src([
-    'node_modules/jquery/dist/jquery.min.js',
-    'node_modules/popper.js/popper.min.js',
-    'node_modules/bootstrap/dist/js/bootstrap.min.js',
-    'node_modules/owl.carousel/dist/owl.carousel.min.js',
-    'node_modules/wow.js/dist/wow.min.js'])
+    `${dir.node}/jquery/dist/jquery.min.js`,
+    `${dir.node}/popper.js/popper.min.js`,
+    `${dir.node}/bootstrap/dist/js/bootstrap.min.js`,
+    `${dir.node}/owl.carousel/dist/owl.carousel.min.js`,
+    `${dir.node}/wow.js/dist/wow.min.js`])
     .pipe(concat('scripts.js'))
-    .pipe(gulp.dest('src/js'))
+    .pipe(gulp.dest(`${dir.src}/js`))
     .pipe(rename('scripts.min.js'))
     .pipe(uglify())
-    .pipe(gulp.dest('public/js'))
+    .pipe(gulp.dest(`${dir.build}/js`))
 });
 
+// WATCH
 gulp.task('watch', function () {
-  gulp.watch(['src/scss/**/*.scss'], ['sass'])
-  gulp.watch('src/js/*.js', ['js'])
-  // gulp.watch('gulp/images/**/*', ['imagemin'])
+  gulp.watch(`${dir.src}/scss/*.scss`, ['purgecss'])
+  gulp.watch(`${dir.src}/js/*.js`, ['js'])
+  gulp.watch(`${dir.src}/images/*`, ['imagemin'])
 });
 
-gulp.task('default', ['sass', 'js', 'watch', 'browser-sync'])
+gulp.task('default', ['watch', 'browser-sync'])

@@ -1,14 +1,28 @@
 {
   "name": "partner-bank",
   "version": "1.0.0",
+  "description": "Site Partner Bank",
   "main": "gulpfile.js",
+  "scripts": {
+    "preinstall": "npx npm-force-resolutions",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "resolutions": {
+    "graceful-fs": "^4.2.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/tfpeixoto/partner-bank.git"
+  },
+  "author": "Thiago Peixoto",
+  "license": "ISC",
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.12.1",
     "animate.css": "^3.7.2",
     "bootstrap": "^4.3.1",
     "browser-sync": "^2.26.5",
     "gulp-concat": "^2.6.1",
-    "gulp-imagemin": "^6.0.0",
+    "gulp-imagemin": "^6.1.1",
     "gulp-purgecss": "^4.0.2",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
@@ -21,20 +35,7 @@
     "uglify-es": "^3.3.9",
     "wow.js": "^1.2.2"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "preinstall": "npx npm-force-resolutions"
-  },
-  "resolutions": {
-    "graceful-fs": "^4.2.4"
-  },
-  "author": "Thiago Peixoto",
-  "license": "ISC",
   "dependencies": {
     "gulp": "^3.9.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/tfpeixoto/partner-bank.git"
   }
 }
