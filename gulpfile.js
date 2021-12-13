@@ -7,6 +7,7 @@ purgecss = require('gulp-purgecss');
 concat = require('gulp-concat');
 rename = require('gulp-rename');
 uglify = require('gulp-uglify-es').default;
+sourceMap = require('gulp-sourcemaps');
 
 // CONSTANTES
 const dir = {
@@ -39,11 +40,11 @@ gulp.task('sass', function () {
 // PURGECSS
 gulp.task('purgecss', ['sass'], function () {
   return gulp.src(`${dir.src}/css/*.css`)
-    .pipe(purgecss({
-      content: [`${dir.build}/*.html`],
-      whitelist: [],
-      whitelistPatterns: []
-    }))
+    // .pipe(purgecss({
+    //   content: [`${dir.build}/*.html`],
+    //   whitelist: ['.owl-nav', '.carousel-fade'],
+    //   whitelistPatterns: [/^owl/, /^carousel/]
+    // }))
     .pipe(gulp.dest(`${dir.build}/css`))
 });
 
