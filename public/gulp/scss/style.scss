@@ -40,6 +40,17 @@ $theme-colors: (
   src: url(../fonts/MyriadHebrew-Regular.woff);
   font-weight: normal;
 }
+@font-face{
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face{
+  font-family: "Lexend";
+  src: url(../fonts/Lexend-Bold.ttf);
+  font-weight: bold;
+}
 
 $body-bg: #fff;
 $font-family-base: "Myriad Hebrew", sans-serif;
@@ -51,3 +62,4 @@ $body-color: #525252;
 // Plugins
 @import "./node_modules/bootstrap/scss/bootstrap";
 @import "home";
+@import "obrigado";
