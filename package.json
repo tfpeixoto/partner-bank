@@ -26,14 +26,12 @@
     "gulp-purgecss": "^4.0.2",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
-    "gulp-sourcemaps": "^3.0.0",
     "gulp-uglify-es": "^1.0.4",
     "jquery": "^3.4.1",
     "jquery-mask-plugin": "^1.14.16",
     "jquery-validation": "^1.19.1",
     "owl.carousel": "^2.3.4",
     "popper.js": "^1.15.0",
-    "uglify-es": "^3.3.9",
     "wow.js": "^1.2.2"
   },
   "dependencies": {
