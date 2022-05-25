@@ -31,7 +31,7 @@ gulp.task('browser-sync', function () {
 
 // SASS
 gulp.task('sass', function () {
-  return gulp.src([`${dir.src}/scss/*.scss`])
+  return gulp.src([`${dir.src}/scss/**/*.scss`])
     .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
     .pipe(gulp.dest(`${dir.src}/css`))
 });
@@ -40,7 +40,7 @@ gulp.task('sass', function () {
 gulp.task('purgecss', ['sass'], function () {
   return gulp.src(`${dir.src}/css/*.css`)
     .pipe(purgecss({
-      content: [`${dir.build}/*.html`],
+      content: [`${dir.build}/**/*.php`],
       whitelist: ['.owl-nav', '.carousel-fade'],
       whitelistPatterns: [/^owl/, /^carousel/]
     }))
@@ -77,7 +77,7 @@ gulp.task('js', function () {
 
 // WATCH
 gulp.task('watch', function () {
-  gulp.watch(`${dir.src}/scss/*.scss`, ['purgecss'])
+  gulp.watch(`${dir.src}/scss/**/*.scss`, ['purgecss'])
   gulp.watch(`${dir.src}/js/*.js`, ['js'])
   gulp.watch(`${dir.src}/images/*`, ['imagemin'])
 });

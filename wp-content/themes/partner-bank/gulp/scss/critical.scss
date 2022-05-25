@@ -1,0 +1,14 @@
+// Custom variables
+@import "components/fontes";
+@import "components/variaveis";
+
+// Bootstrap
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+@import "./node_modules/bootstrap/scss/mixins";
+@import "./node_modules/bootstrap/scss/navbar";
+
+// Custom styles
+@import "components/geral";
+@import "components/header";
+@import "components/banner";

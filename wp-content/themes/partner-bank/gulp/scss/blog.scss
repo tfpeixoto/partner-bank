@@ -1,0 +1,16 @@
+// Custom variables
+@import "components/fontes";
+@import "components/variaveis";
+
+// Bootstrap
+@import "./node_modules/bootstrap/scss/bootstrap";
+
+// Custom styles
+@import "components/busca";
+@import "components/trending";
+@import "components/categorias";
+@import "components/cards";
+@import "components/paginacao";
+@import "components/newsletter";
+@import "components/mapas";
+@import "components/footer";

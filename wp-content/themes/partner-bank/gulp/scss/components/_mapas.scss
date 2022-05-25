@@ -1,0 +1,20 @@
+.mapas {
+  background: #f2f2f2;
+  padding: 0;
+
+  .telefone {
+    color: $azure;
+    font-size: 1.1rem;
+    font-weight: 700;
+    transition: all 0.25s ease-in-out;
+
+    &:hover {
+      color: $downriver;
+      text-decoration: none;
+    }
+
+    svg {
+      transform: rotate(90deg);
+    }
+  }
+}

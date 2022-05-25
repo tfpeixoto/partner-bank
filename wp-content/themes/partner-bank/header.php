@@ -3,11 +3,11 @@
 
 <head>
   <!-- Início do aviso de consentimento de cookies OneTrust para www.partnerbank.com.br -->
-  <script src="https://cdn.cookielaw.org/consent/3fe18421-054f-4af6-9624-4736a4092905/OtAutoBlock.js" defer></script>
+  <!-- <script src="https://cdn.cookielaw.org/consent/3fe18421-054f-4af6-9624-4736a4092905/OtAutoBlock.js" defer></script>
   <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" data-document-language="true" type="text/javascript" charset="UTF-8" data-domain-script="3fe18421-054f-4af6-9624-4736a4092905" defer></script>
   <script type="text/javascript">
     function OptanonWrapper() {}
-  </script>
+  </script> -->
 
   <!-- GTM -->
   <script>
@@ -40,6 +40,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/css/components/animate.css">
   <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/css/style.css">
+
+  <link rel="stylesheet" href="<?= get_template_directory_uri() . "/css/" . $estiloPagina ?>">
 
   <?php wp_head(); ?>
 
@@ -88,76 +90,40 @@
   <!-- End Google Tag Manager (noscript) -->
 
   <!-- header -->
-  <header id="topo">
+  <header id="topo" class="header">
+    <div class="header__contatos">
+      <span class="contato">Suporte: <i class="fa-solid fa-phone"></i>(31) 4040-4167</span>
+      <a href="https://www.instagram.com/partner.bank/" class="contato-link" title="Nosso Instagram" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.facebook.com/partnerbankbr/" class="contato-link" title="Nosso Facebook" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.linkedin.com/company/partnerbank/" class="contato-link" title="Nosso LinkedIn" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <!-- <a href="https://api.whatsapp.com/send?phone=5531984857169" class="contato-link" title="Nosso Whatsapp" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-whatsapp"></i></a> -->
+    </div>
+
     <div class="container">
       <nav class="navbar navbar-expand-lg">
-        <div class="col-12 col-lg-7">
-          <div class="row">
-
-            <div class="col-9 col-lg-12">
-              <a class="navbar-brand" href="index.html">
-                <img src="<?= get_template_directory_uri(); ?>/images/partner-bank-negativa.png" height="50" width="152" alt="PartnerBank" />
-              </a>
-              <span class="topo-descricao mt-2">A sua instituição de pagamentos</span>
-            </div>
-
-            <div class="col-3 d-flex justify-content-center">
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMobile" aria-controls="navMobile" aria-expanded="false" aria-label="Alterna navegação">
-                <span class="navbar-toggler-icon">
-                  <img src="<?= get_template_directory_uri(); ?>/images/menu.svg" height="30" width="34" alt="Menu" />
-                </span>
-              </button>
-            </div>
-          </div>
+        <div class="header__brand">
+          <?= get_custom_logo(); ?>
+          <p class="header__description"><?= bloginfo('description'); ?></p>
         </div>
 
-        <!-- <div class="col-lg-5 d-none d-lg-block">
-          <div class="navbar-menu">
-            <ul class="navbar-menu__list">
-              <li class="navbar-menu__list-item">
-                <a class="navbar-menu__list-link" href="https://desk.zoho.com/portal/partnerbank/pt/home" target="_blank" rel="noopener noreferrer">Área Restrita</a>
-              </li>
-              <li class="navbar-menu__list-item">
-                <span class="navbar-submenu">Nossas Soluções</span>
-                <ul class="navbar-submenu__list">
-                  <li class="navbar-submenu__list-item"><a href="https://materiais.partnerbank.com.br/conheca-o-partner-bank" target="_blank" rel="noopener noreferrer">Quero conhecer</a></li>
-                  <li class="navbar-submenu__list-item"><a href="#" data-toggle="modal" data-target="#ModalErp">Conecte seu ERP</a></li>
-                  <li class="navbar-submenu__list-item"><a href="https://materiais.partnerbank.com.br/conta-digital" target="_blank" rel="noopener noreferrer">Conta Digital</a></li>
-                  <li class="navbar-submenu__list-item"><a href="https://materiais.partnerbank.com.br/precisa-de-credito" target="_blank" rel="noopener noreferrer">Crédito</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div> -->
+        <button class="navbar-toggler header__mobile" type="button" data-toggle="collapse" data-target="#navMobile" aria-controls="navMobile" aria-expanded="false" aria-label="Alterna navegação">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#ffffff">
+            <path d="M16 132h416c8.8 0 16-7.2 16-16V76c0-8.8-7.2-16-16-16H16C7.2 60 0 67.2 0 76v40c0 8.8 7.2 16 16 16zm0 160h416c8.8 0 16-7.2 16-16v-40c0-8.8-7.2-16-16-16H16c-8.8 0-16 7.2-16 16v40c0 8.8 7.2 16 16 16zm0 160h416c8.8 0 16-7.2 16-16v-40c0-8.8-7.2-16-16-16H16c-8.8 0-16 7.2-16 16v40c0 8.8 7.2 16 16 16z" />
+          </svg>
+        </button>
 
-        <div class="col-">
-          <?php
-          wp_nav_menu(array(
-            'theme_location'  => 'menu-principal',
-            'depth'           => 2,
-            'container'       => 'div',
-            'container_class' => 'collapse navbar-collapse',
-            'container_id'    => 'header__nav',
-            'menu_class'      => 'navbar-nav',
-            'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
-            'walker'          => new WP_Bootstrap_Navwalker(),
-          ));
-          ?>
-
-          <!-- <div class="collapse navbar-collapse" id="navMobile">
-            <div class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link link-menu" href="https://desk.zoho.com/portal/partnerbank/pt/home" target="_blank">Área Restrita</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link btn-menu" href="#" data-toggle="modal" data-target="#ModalErp">Conecte seu ERP</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link btn-menu" href="https://materiais.partnerbank.com.br/conheca-o-partner-bank" target="_blank">Quero conhecer</a>
-              </li>
-            </div>
-          </div> -->
-        </div>
+        <?php
+        wp_nav_menu(array(
+          'theme_location'  => 'menu-principal',
+          'depth'           => 2,
+          'container'       => 'div',
+          'container_class' => 'collapse navbar-collapse',
+          'container_id'    => 'navMobile',
+          'menu_class'      => 'navbar-nav header__nav ml-auto',
+          'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+          'walker'          => new WP_Bootstrap_Navwalker(),
+        ));
+        ?>
       </nav>
     </div>
   </header>

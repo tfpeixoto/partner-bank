@@ -1,0 +1,43 @@
+// footer
+.footer {
+  background: $downriver;
+  color: $white;
+  padding: 2rem 0;
+
+  &__copy {
+    text-align: right;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  &__menu {
+    display: inline-flex;
+    margin: 0;
+    padding-inline-start: 0;
+    text-align: left;
+
+    li {
+      display: flex;
+      list-style: none;
+
+      &:last-child {
+        &:after {
+          content: none;
+        }
+      }
+
+      &:after {
+        content: " .";
+        color: $white;
+        padding-left: 0.5rem;
+      }
+
+      a {
+        font-weight: bold;
+        padding: 0 0.5rem;
+      }
+    }
+  }
+}

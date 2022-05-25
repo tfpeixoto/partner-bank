@@ -1,0 +1,70 @@
+.header {
+  background: $downriver;
+  color: $white;
+
+  &__contatos {
+    background: $white;
+    color: $downriver;
+    display: flex;
+    font-weight: bold;
+    justify-content: flex-end;
+    padding: 0.25rem 0.5rem;
+  }
+
+  &__brand {
+    padding: 0.5rem 0;
+    text-align: center;
+
+    img {
+      height: auto;
+      max-width: 152px;
+      width: 100%;
+    }
+
+    p {
+      margin: 0.5rem 0 0 0;
+    }
+  }
+
+  &__mobile {
+    svg {
+      fill: $white;
+      height: 2rem;
+      width: 2rem;
+    }
+  }
+
+  &__nav {
+    a {
+      color: $white;
+      padding: 0 1.5rem !important;
+      text-transform: uppercase;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+
+    .dropdown {
+      &:hover {
+        .dropdown-menu {
+          display: block;
+        }
+      }
+    }
+
+    .dropdown-menu {
+      background: $downriver;
+      border: solid 2px #535252;
+      box-shadow: 3px 3px 1px #535252;
+      color: $white;
+      transition: all ease-in-out .25s;
+
+      li {
+        a {
+          padding: 0.5rem 1rem !important;
+        }
+      }
+    }
+  }
+}

@@ -1,65 +1,13 @@
-// cores antigas
-$roxo: #313751;
-$amarelo: #e3c862;
+// Custom variables
+@import "components/fontes";
+@import "components/variaveis";
 
-//novas cores
-$egg: #00dad9;
-$azure: #01a8f7;
-$science: #0075d5;
-$eminence: #662d91;
-$downriver: #091549;
-
-$theme-colors: (
-  "roxo": $roxo,
-  "amarelo": $amarelo,
-  "egg": $egg,
-  "azure": $azure,
-  "science": $science,
-  "eminence": $eminence,
-  "downriver": $downriver,
-);
-
-@font-face {
-  font-family: "MyriadHebrewBold";
-  src: url(../fonts/MyriadHebrew-Bold.woff);
-  font-weight: bold;
-}
-@font-face {
-  font-family: "MyriadHebrewBoldItalic";
-  src: url(../fonts/MyriadHebrew-BoldIt.woff);
-  font-style: italic;
-  font-weight: bold;
-}
-@font-face {
-  font-family: "MyriadHebrewItalic";
-  src: url(../fonts/MyriadHebrew-It.woff);
-  font-style: italic;
-}
-@font-face {
-  font-family: "Myriad Hebrew";
-  src: url(../fonts/MyriadHebrew-Regular.woff);
-  font-weight: normal;
-}
-@font-face{
-  font-family: "Roboto";
-  src: url(../fonts/Roboto-Bold.ttf);
-  font-weight: bold;
-}
-
-@font-face{
-  font-family: "Lexend";
-  src: url(../fonts/Lexend-Bold.ttf);
-  font-weight: bold;
-}
-
-$body-bg: #fff;
-$font-family-base: "Myriad Hebrew", sans-serif;
-
-$h2-font-size: 2rem;
-$lead: 1.5rem;
-$body-color: #525252;
-
-// Plugins
+// Bootstrap
 @import "./node_modules/bootstrap/scss/bootstrap";
-@import "home";
-@import "obrigado";
+
+// Custom styles
+@import "components/home";
+@import "components/conteudo";
+@import "components/obrigado";
+@import "components/mapas";
+@import "components/footer";

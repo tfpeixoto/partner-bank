@@ -1,0 +1,29 @@
+.newsletter{
+  background: $science;
+  color: $white;
+
+  &__titulo{
+    text-align: center;
+  }
+
+  label{
+    font-size: 1.5rem;
+    margin-left: 1rem;
+  }
+
+  input{
+    border-radius: 25px;
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem;
+  }
+
+  button{
+    border-radius: 25px;
+    background: $downriver;
+    color: $white;
+    font-size: 1.5rem;
+    min-height: 50px;
+    text-align: center;
+    width: 100%;
+  }
+}

@@ -37,7 +37,7 @@ add_action('after_setup_theme', 'partner_registra_menu');
 // SCRIPTS
 function partner_scripts()
 {
-  // wp_enqueue_style('critital', get_template_directory_uri() . '/assets/css/critical.css', array(), '1.1', 'all');
+  wp_enqueue_style('critital', get_template_directory_uri() . '/css/critical.css', array(), '1.1', 'all');
 
   wp_deregister_script('jquery');
   wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-3.5.1.min.js', array(), '3.5.1');

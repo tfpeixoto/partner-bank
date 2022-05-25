@@ -1,0 +1,57 @@
+.post-cards {
+  &__card {
+    background: $white;
+    border: none;
+    border-radius: 25px;
+    color: $default;
+    margin: 1rem 0;
+    min-height: 460px;
+    overflow: hidden;
+  }
+
+  &__conteudo {
+    padding: 1rem;
+  }
+
+  &__titulo {
+    color: $downriver;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+  }
+
+  &__data {
+    font-size: 0.85rem;
+  }
+
+  &__resumo,
+  p {
+    line-height: 1.2;
+  }
+
+  &__link {
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    transition: all ease-in-out 0.25s;
+
+    &:hover {
+      color: $downriver;
+      font-weight: bold;
+      text-decoration: none;
+
+      svg {
+        fill: $downriver;
+      }
+    }
+
+    svg {
+      fill: $science;
+      height: 1rem;
+      margin-top: 0.2rem;
+      transition: all ease-in-out 0.25s;
+      width: 2rem;
+    }
+  }
+}

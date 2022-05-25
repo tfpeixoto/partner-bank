@@ -1,4 +1,4 @@
-<footer>
+<section class="mapas">
   <div class="container">
     <div class="row">
       <div class="col-12 col-md-6 d-flex justify-content-center align-items-center my-5 wow fadeInDown">
@@ -23,29 +23,28 @@
         </p>
       </div>
     </div>
+  </div>
+</section>
 
+<footer class="footer">
+  <div class="container">
     <div class="row">
-      <div class="col-12">
-        <hr />
-        <p class="text-roxo text-center">© Copyright 2020 PartnerBank . Todos os direitos reservados .
-          <a href="lgpd.html" class="text-azure">Fale com o DPO</a> .
-          <a href="politica-privacidade.html" class="text-azure">Política de Privacidade</a> .
-          <a href="politica-cookies.html" class="text-azure">Política de Cookies</a>
-        </p>
-
-        <?php
-          wp_nav_menu(array(
-            'theme_location'  => 'menu-rodape',
-            'depth'           => 2,
-            'container'       => 'div',
-            'container_class' => '',
-            'container_id'    => 'footer__nav',
-            'menu_class'      => 'navbar-nav',
-            'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
-            'walker'          => new WP_Bootstrap_Navwalker(),
-          ));
-          ?>
+      <div class="col-12 col-md-6 footer__copy">
+        <p>© Copyright 2020 PartnerBank . Todos os direitos reservados</p>
       </div>
+
+      <?php
+      wp_nav_menu(array(
+        'theme_location'  => 'menu-rodape',
+        'depth'           => 2,
+        'container'       => 'div',
+        'container_class' => 'col-12 col-md-6 footer__nav',
+        'container_id'    => '',
+        'menu_class'      => 'footer__menu',
+        'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+        'walker'          => new WP_Bootstrap_Navwalker(),
+      ));
+      ?>
     </div>
   </div>
 </footer>
