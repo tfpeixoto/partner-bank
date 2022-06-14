@@ -18,6 +18,17 @@
     font-size: 1.25rem;
     font-weight: bold;
     margin-bottom: 0.25rem;
+
+    a{
+      color: $downriver;
+      text-decoration: none;
+      transition: all ease-in-out .25s;
+
+      &:hover{
+        color: $azure;
+        text-decoration: none;
+      }
+    }
   }
 
   &__data {

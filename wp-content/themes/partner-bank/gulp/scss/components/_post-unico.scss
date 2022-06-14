@@ -1,0 +1,58 @@
+.post-unico {
+  padding: 0;
+
+  &__conteudo {
+    margin-top: 3.5rem;
+  }
+
+  &__breadcrumb {
+    color: $downriver;
+
+    a {
+      color: $downriver;
+      text-decoration: underline;
+      transition: all ease-in-out 0.25s;
+
+      &:hover {
+        color: $azure;
+      }
+    }
+  }
+
+  &__titulo {
+    color: $downriver;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  &__dados {
+    margin-bottom: 2rem;
+
+    ul {
+      display: flex;
+      justify-content: flex-start;
+      padding-inline-start: 0;
+
+      li {
+        align-items: center;
+        color: $downriver;
+        display: flex;
+        list-style: none;
+        padding-right: 2rem;
+
+        i {
+          color: $azure;
+          font-size: 2rem;
+          padding-right: 0.5rem;
+        }
+      }
+    }
+  }
+
+  &__thumbnail {
+    img {
+      height: auto;
+      max-width: 100%;
+    }
+  }
+}

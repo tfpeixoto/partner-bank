@@ -1,0 +1,53 @@
+.compartilhe {
+  ul {
+    display: flex;
+    justify-content: space-around;
+    padding-inline-start: 0;
+
+    li {
+      list-style: none;
+
+      a {
+        align-items: center;
+        background: $azure;
+        border-radius: 100%;
+        color: $white;
+        display: flex;
+        justify-content: center;
+        min-height: 30px;
+        min-width: 30px;
+        padding: 0.75rem;
+        text-decoration: none;
+        transition: all ease-in-out .25s;
+
+        i {
+          font-size: 1.25rem;
+        }
+
+        &:hover{
+          opacity: .75;
+        }
+      }
+    }
+  }
+
+  &__twitter {
+    background: #00acee !important;
+  }
+
+  &__facebook {
+    background: #3b5998 !important;
+  }
+
+  &__linkedin {
+    background: #0e76a8 !important;
+  }
+
+  &__whatsapp {
+    background: #a4c639 !important;
+  }
+
+  &__email {
+    background: $azure !important;
+  }
+}

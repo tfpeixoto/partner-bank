@@ -6,7 +6,7 @@ function partner_adiciona_recursos_tema()
   add_theme_support('title-tag');
   add_theme_support('custom-logo');
   add_theme_support('post-thumbnails');
-  add_image_size('thumb', 0, 204, true);
+  add_image_size('thumb-card', 500, 250, true);
 }
 add_action('after_setup_theme', 'partner_adiciona_recursos_tema');
 
@@ -56,11 +56,7 @@ function tempoDeLeitura()
 
   $min = ceil($char_count / 1200); // tempo médio de leitura: 1200 caracteres
 
-  if ($char_count <= 1) {
-    $tempo = '1 min. de leitura';
-  } else {
-    $tempo = $min . ' min. de leitura';
-  }
+  $tempo = ($char_count <= 1) ? "1 minuto" : $min . " minutos";
 
   // $tempo .= ' ('. $word_count .' palavras, '. $char_count .' caracteres)';
   $tempo_leitura = $tempo;
@@ -125,3 +121,22 @@ function partner_post_type_slideshow()
   register_post_type('slideshow', $args);
 }
 add_action('init', 'partner_post_type_slideshow');
+
+
+/**
+ * Sidebar
+ */
+/**
+ * Add a sidebar.
+ */
+function wpdocs_theme_slug_widgets_init() {
+  register_sidebar( array(
+      'name'          => __( 'Sidebar', 'partner' ),
+      'id'            => 'sidebar',
+      'before_widget' => '<li id="%1$s" class="widget %2$s">',
+      'after_widget'  => '</li>',
+      'before_title'  => '<h3 class="widgettitle">',
+      'after_title'   => '</h3>',
+  ) );
+}
+add_action( 'widgets_init', 'wpdocs_theme_slug_widgets_init' );

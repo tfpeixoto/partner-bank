@@ -38,34 +38,18 @@ require_once "header.php";
     </div>
 
     <div class="row post-cards">
-    <?php
+      <?php
       $args = array(
         'post_type' => 'post',
         'posts_per_page' => 3
       );
       $trending = new WP_Query($args);
 
-      if ($trending->have_posts()) : while ($trending->have_posts()) : $trending->the_post(); ?>
+      if ($trending->have_posts()) : while ($trending->have_posts()) : $trending->the_post();
 
-          <div class="col-12 col-md-4">
-            <div class="post-cards__card">
-              <?php the_post_thumbnail(); ?>
+          get_template_part('partials/card');
 
-              <img src="<?= get_template_directory_uri(); ?>/images/bg-modal-conhecer.jpg" alt="#" />
-
-              <div class="post-cards__conteudo">
-                <h3 class="post-cards__titulo"><?php the_title(); ?></h3>
-                <p class="post-cards__data"><?php the_time('j \d\e M \d\e Y'); ?></p>
-                <p class="post-cards__resumo"><?php the_excerpt(); ?></p>
-
-                <a href="<?php the_permalink(); ?>" class="post-cards__link">Leia mais <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                    <path d="M96 480c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L242.8 256L73.38 86.63c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l192 192c12.5 12.5 12.5 32.75 0 45.25l-192 192C112.4 476.9 104.2 480 96 480z" />
-                  </svg></a>
-              </div>
-            </div>
-          </div>
-
-        <?php endwhile;
+        endwhile;
       else : ?>
 
         <div class="col-12">
@@ -100,27 +84,11 @@ require_once "header.php";
       );
       $posts = new WP_Query($args);
 
-      if ($posts->have_posts()) : while ($posts->have_posts()) : $posts->the_post(); ?>
+      if ($posts->have_posts()) : while ($posts->have_posts()) : $posts->the_post();
 
-          <div class="col-12 col-md-4">
-            <div class="post-cards__card">
-              <?php the_post_thumbnail(); ?>
+          get_template_part('partials/card');
 
-              <img src="<?= get_template_directory_uri(); ?>/images/bg-modal-conhecer.jpg" alt="#" />
-
-              <div class="post-cards__conteudo">
-                <h3 class="post-cards__titulo"><?php the_title(); ?></h3>
-                <p class="post-cards__data"><?php the_time('j \d\e M \d\e Y'); ?></p>
-                <p class="post-cards__resumo"><?php the_excerpt(); ?></p>
-
-                <a href="<?php the_permalink(); ?>" class="post-cards__link">Leia mais <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                    <path d="M96 480c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L242.8 256L73.38 86.63c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l192 192c12.5 12.5 12.5 32.75 0 45.25l-192 192C112.4 476.9 104.2 480 96 480z" />
-                  </svg></a>
-              </div>
-            </div>
-          </div>
-
-        <?php endwhile;
+        endwhile;
       else : ?>
 
         <div class="col-12">
@@ -132,6 +100,8 @@ require_once "header.php";
 
     <div class="row paginacao">
       <div class="col-12">
+        <?php partner_paginacao(); ?>
+
         <nav class="d-flex justify-content-center">
           <ul class="paginacao__paginador">
             <li class="first"><a href="#">Anterior</a></li>
