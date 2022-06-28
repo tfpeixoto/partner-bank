@@ -20,7 +20,7 @@
     "@fortawesome/fontawesome-free": "^5.12.1",
     "animate.css": "^3.7.2",
     "bootstrap": "^4.3.1",
-    "browser-sync": "^2.26.5",
+    "browser-sync": "^2.27.9",
     "gulp-concat": "^2.6.1",
     "gulp-imagemin": "^6.1.1",
     "gulp-purgecss": "^4.0.2",
