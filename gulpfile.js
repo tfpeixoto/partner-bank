@@ -42,8 +42,8 @@ gulp.task('purgecss', ['sass'], function () {
   return gulp.src(`${dir.src}/css/*.css`)
     // .pipe(purgecss({
     //   content: [`${dir.build}/*.html`],
-    //   whitelist: ['.owl-nav', '.carousel-fade'],
-    //   whitelistPatterns: [/^owl/, /^carousel/]
+    //   whitelist: [/owl-nav/, /carousel-fade/],
+    //   whitelistPatterns: [/^owl/, /^carousel/, /owl-nav/, /carousel-fade/, /active/, /carousel-item-next.carousel-item-left/, /carousel-item-prev/, /carousel-item-next/, /carousel-item-right/ ]
     // }))
     .pipe(gulp.dest(`${dir.build}/css`))
 });

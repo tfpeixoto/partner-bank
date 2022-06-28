@@ -59,6 +59,12 @@ $h2-font-size: 2rem;
 $lead: 1.5rem;
 $body-color: #525252;
 
+#zsiqbtn{
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+}
+
 // Plugins
 @import "./node_modules/bootstrap/scss/bootstrap";
 @import "home";
