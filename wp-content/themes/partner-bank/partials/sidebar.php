@@ -14,11 +14,11 @@
         <div class="sidebar__card">
           <?php the_post_thumbnail(); ?>
 
-          <h3>
+          <h4>
             <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
               <?php the_title(); ?>
             </a>
-          </h3>
+          </h4>
         </div>
 
     <?php endwhile;

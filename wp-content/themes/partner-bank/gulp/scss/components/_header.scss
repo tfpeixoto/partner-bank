@@ -3,12 +3,39 @@
   color: $white;
 
   &__contatos {
+    align-items: center;
     background: $white;
     color: $downriver;
     display: flex;
     font-weight: bold;
-    justify-content: flex-end;
-    padding: 0.25rem 0.5rem;
+    min-height: 30px;
+    justify-content: end;
+    padding: 3px 10px;
+
+    .contato {
+      margin: 0 10px;
+      font-weight: 700;
+
+      i {
+        font-size: 18px;
+        margin: 0 4px;
+      }
+    }
+
+    a {
+      color: $downriver;
+      margin: 0px 5px;
+      transition: ALL ease-in-out 0.25s;
+
+      &:hover {
+        opacity: 0.75;
+        text-decoration: none;
+      }
+
+      i {
+        font-size: 1.4rem;
+      }
+    }
   }
 
   &__brand {
@@ -35,34 +62,59 @@
   }
 
   &__nav {
-    a {
-      color: $white;
-      padding: 0 1.5rem !important;
-      text-transform: uppercase;
+    display: flex;
+    align-items: center;
 
-      &:hover {
-        opacity: 0.5;
-      }
-    }
+    li {
+      &.btn {
+        background: none;
+        border: 0;
 
-    .dropdown {
-      &:hover {
-        .dropdown-menu {
-          display: block;
+        a {
+          background: #29a840;
+          border-radius: 100px;
+          color: $white;
+          padding: 13px 25px !important;
+          transform: scale3d(1, 1, 1);
+          transition: all 0.25s ease;
+
+          &:hover {
+            background: #29a840;
+            transform: scale3d(0.97, 0.97, 1);
+          }
         }
       }
-    }
 
-    .dropdown-menu {
-      background: $downriver;
-      border: solid 2px #535252;
-      box-shadow: 3px 3px 1px #535252;
-      color: $white;
-      transition: all ease-in-out .25s;
+      a {
+        color: $white;
+        padding: 0 .75rem !important;
+        text-transform: uppercase;
+        transition: all 0.25s ease;
 
-      li {
-        a {
-          padding: 0.5rem 1rem !important;
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+
+      .dropdown {
+        &:hover {
+          .dropdown-menu {
+            display: block;
+          }
+        }
+
+        .dropdown-menu {
+          background: $downriver;
+          border: solid 2px #535252;
+          box-shadow: 3px 3px 1px #535252;
+          color: $white;
+          transition: all ease-in-out 0.25s;
+
+          li {
+            .dropdown-item {
+              padding: 0.5rem 1rem !important;
+            }
+          }
         }
       }
     }

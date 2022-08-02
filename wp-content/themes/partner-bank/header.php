@@ -92,11 +92,10 @@
   <!-- header -->
   <header id="topo" class="header">
     <div class="header__contatos">
-      <span class="contato">Suporte: <i class="fa-solid fa-phone"></i>(31) 4040-4167</span>
+    <span class="contato">Suporte: <a href="tel:3140404167" class="contato-link" rel="noopener noreferrer"><i class="fa-solid fa-phone"></i>(31) 4040-4167</span></a>
       <a href="https://www.instagram.com/partner.bank/" class="contato-link" title="Nosso Instagram" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-instagram"></i></a>
       <a href="https://www.facebook.com/partnerbankbr/" class="contato-link" title="Nosso Facebook" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-facebook"></i></a>
       <a href="https://www.linkedin.com/company/partnerbank/" class="contato-link" title="Nosso LinkedIn" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-      <!-- <a href="https://api.whatsapp.com/send?phone=5531984857169" class="contato-link" title="Nosso Whatsapp" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-whatsapp"></i></a> -->
     </div>
 
     <div class="container">

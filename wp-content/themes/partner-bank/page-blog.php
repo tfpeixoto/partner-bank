@@ -12,7 +12,7 @@ require_once "header.php";
 <section class="busca">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-12 col-md-8">
+      <div class="col-12 col-md-10">
         <h2>Tudo sobre sua instituição de pagamento</h2>
 
         <form action="<?= home_url('/'); ?>" method="get">
@@ -120,7 +120,7 @@ require_once "header.php";
   <div class="container">
     <div class="row">
       <div class="col-12 newsletter__titulo">
-        <h2>Assine para receber conteúdos exclusivos</h2>
+        <h2><i class="fa-regular fa-envelope"></i> Assine para receber conteúdos exclusivos</h2>
       </div>
     </div>
 

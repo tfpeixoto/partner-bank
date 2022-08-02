@@ -1,23 +1,46 @@
-.newsletter{
+.newsletter {
   background: $science;
   color: $white;
 
-  &__titulo{
+  &__titulo {
     text-align: center;
+
+    h2 {
+      i {
+        font-size: 4rem;
+        margin-right: 1rem;
+      }
+    }
   }
 
-  label{
+  label {
     font-size: 1.5rem;
     margin-left: 1rem;
   }
 
-  input{
+  input {
     border-radius: 25px;
     font-size: 1.5rem;
     padding: 1rem 1.5rem;
   }
 
-  button{
+  .form-check {
+    color: $downriver;
+    font-size: 1rem;
+    margin-left: 50px;
+
+    label {
+      margin-left: 0;
+
+      a {
+        color: $downriver;
+        font-weight: 700;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  button {
     border-radius: 25px;
     background: $downriver;
     color: $white;
