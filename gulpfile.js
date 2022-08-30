@@ -11,7 +11,7 @@ uglify = require('gulp-uglify-es').default;
 // CONSTANTES
 const dir = {
   src: 'wp-content/themes/partner-bank/gulp',
-  node: 'node_modules',
+  node: './node_modules',
   build: 'wp-content/themes/partner-bank'
 }
 
@@ -64,10 +64,12 @@ gulp.task('imagemin', function () {
 gulp.task('js', function () {
   return gulp.src([
     `${dir.node}/jquery/dist/jquery.min.js`,
-    `${dir.node}/popper.js/popper.min.js`,
+    `${dir.node}/popper.js/dist/umd/popper.min.js`,
     `${dir.node}/bootstrap/dist/js/bootstrap.min.js`,
     `${dir.node}/owl.carousel/dist/owl.carousel.min.js`,
-    `${dir.node}/wow.js/dist/wow.min.js`])
+    `${dir.node}/wow.js/dist/wow.min.js`,
+    `${dir.src}/js/acoes.js`
+  ])
     .pipe(concat('scripts.js'))
     .pipe(gulp.dest(`${dir.src}/js`))
     .pipe(rename('scripts.min.js'))

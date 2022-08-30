@@ -61,26 +61,38 @@ require_once "header.php";
   </div>
 </section>
 
-<section class="categorias">
+<section id="categorias" class="categorias">
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <ul class="categorias__lista">
+        <div class="owl-carousel owl-categories categorias__lista">
+          <a href="blog/#categorias">Todas</a>
           <?php
           $categories = get_categories();
+
           foreach ($categories as $category) {
-            echo '<li><a href="' . get_category_link($category->term_id) . '">' . $category->name . '</a></li>';
+            echo "<a href='?category=";
+            echo $category->slug;
+            echo "#categorias'>";
+            echo $category->name;
+            echo "</a>";
           }
           ?>
-        </ul>
+        </div>
       </div>
     </div>
 
     <div class="row">
       <?php
+
+      $category_selected = isset($_GET['category']) ? $_GET['category'] : '';
+      $paged = (get_query_var('page')) ? get_query_var('page') : 1;
+
       $args = array(
         'post_type' => 'post',
-        'posts_per_page' => 6
+        'paged' => $paged,
+        'posts_per_page' => 6,
+        'category_name' => $category_selected
       );
       $posts = new WP_Query($args);
 
@@ -92,7 +104,7 @@ require_once "header.php";
       else : ?>
 
         <div class="col-12">
-          <p>Ops, não há posts publicados.</p>
+          <p>Não há posts publicados nessa categoria.</p>
         </div>
 
       <?php endif; ?>
@@ -101,16 +113,6 @@ require_once "header.php";
     <div class="row paginacao">
       <div class="col-12">
         <?php partner_paginacao(); ?>
-
-        <nav class="d-flex justify-content-center">
-          <ul class="paginacao__paginador">
-            <li class="first"><a href="#">Anterior</a></li>
-            <li><a href="#">1</a></li>
-            <li class="current"><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li class="last"><a href="#">Próximo</a></li>
-          </ul>
-        </nav>
       </div>
     </div>
   </div>
@@ -124,17 +126,19 @@ require_once "header.php";
       </div>
     </div>
 
-    <form class="newsletter__form">
+    <form id="news-footer" class="newsletter__form" name="newsletter_footer">
       <div class="row justify-content-center">
         <div class="col-12 col-md-4 form-group">
           <label for="news-nome">Nome</label>
-          <input type="text" name="news-nome" id="news-nome" class="form-control" />
+          <input type="text" name="nome" id="news-nome" class="form-control" required />
         </div>
 
         <div class="col-12 col-md-4 form-group">
           <label for="news-email">E-mail</label>
-          <input type="text" name="news-email" id="news-email" class="form-control" />
+          <input type="email" name="email" id="news-email" class="form-control" required />
         </div>
+
+        <input type="hidden" name="tags" value="newsletter-footer" />
 
         <div class="col-12 col-md-2 form-group d-flex align-items-end">
           <button type="submit">Assinar</button>
@@ -143,11 +147,16 @@ require_once "header.php";
 
       <div class="row justify-content-center">
         <div class="col-12 col-md-10 form-check">
-          <input class="form-check-input" type="checkbox" value="" id="news-optin">
-          <label class="form-check-label" for="news-optin">
-            Lorem ipsum dolor sit amet cursus <a href="#">apoet cursus abot doret</a>
+
+          <label>
+            <input type="checkbox" data-privacy="true" name="communications" value="1">
+            Ao informar meus dados, eu concordo com a <a href="politica-de-privacidade" target="_blank">Política de Privacidade da Group Software</a>.
           </label>
         </div>
+      </div>
+
+      <div id="msg-sucesso" class="alert alert-success" role="alert" style="display: none">
+        Newsletter assinada com sucesso.
       </div>
     </form>
   </div>

@@ -1,5 +1,8 @@
 <?php
-
+/**
+ * Template name: LGPD
+ */
+$estiloPagina = 'page.css';
 require_once 'header.php';
 ?>
 

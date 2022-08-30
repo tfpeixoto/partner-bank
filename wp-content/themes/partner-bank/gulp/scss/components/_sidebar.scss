@@ -6,30 +6,39 @@
     background: #1a2551;
     padding: 3.5rem 1.5rem 1.5rem 1.5rem;
     text-align: center;
-  }
 
-  &__card {
-    margin-bottom: 2rem;
-
-    h3 {
-      font-size: 1.25rem;
-      font-weight: bold;
+    h3{
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
     }
 
-    h4 {
-      font-size: 1.25rem;
-    }
+    ul {
+      li {
+        cursor: pointer;
+        font-size: 1.5rem;
+        line-height: 1.2;
+        margin-bottom: 2rem;
 
-    img {
-      border-radius: 20px;
-      height: auto;
-      margin-bottom: 0.5rem;
-      max-width: 100%;
-    }
+        img {
+          border-radius: 25px;
+          margin-bottom: 0.5rem;
+          transition: all ease-in-out 0.25s;
 
-    a {
-      color: $white;
-      text-decoration: underline;
+          &:hover {
+            opacity: 0.75;
+          }
+        }
+
+        a {
+          color: $white;
+          text-decoration: underline;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
     }
   }
 
@@ -39,9 +48,66 @@
     line-height: 1.3;
     text-align: center;
 
+    .form-group {
+      margin-bottom: 2rem;
+      text-align: left;
+
+      label {
+        font-size: 1.25rem;
+        margin: 0 0 0.25rem 1rem;
+      }
+
+      .form-control {
+        border-radius: 25px;
+        font-size: 1rem;
+        line-height: 1;
+        padding: 1.5rem 1rem;
+      }
+
+      &.form-check {
+        padding-left: 0;
+
+        label {
+          color: $downriver;
+          font-size: 1rem;
+          margin: 0;
+
+          a {
+            color: $downriver;
+            font-weight: 700;
+            text-decoration: underline;
+            transition: all ease-in-out 0.25s;
+
+            &:hover {
+              opacity: 0.75;
+            }
+          }
+        }
+      }
+    }
+
     i {
       color: $white;
       font-size: 5rem;
+    }
+
+    button {
+      background: $white;
+      border: none;
+      border-radius: 100px;
+      color: $downriver;
+      font-size: 1.5rem;
+      font-weight: 700;
+      padding: 1rem 1.5rem;
+      transition: all ease-in-out 0.25s;
+
+      &:hover {
+        opacity: 0.75;
+      }
+    }
+
+    .alert {
+      margin-top: 1rem;
     }
   }
 }

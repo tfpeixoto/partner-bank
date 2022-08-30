@@ -1,0 +1,28 @@
+// cores antigas
+$roxo: #313751;
+$amarelo: #e3c862;
+$default: #525252;
+
+//novas cores
+$egg: #00dad9;
+$azure: #01a8f7;
+$science: #0075d5;
+$eminence: #662d91;
+$downriver: #091549;
+
+$theme-colors: (
+  "roxo": $roxo,
+  "amarelo": $amarelo,
+  "egg": $egg,
+  "azure": $azure,
+  "science": $science,
+  "eminence": $eminence,
+  "downriver": $downriver,
+);
+
+$body-bg: #fff;
+$font-family-base: "Roboto", sans-serif;
+
+$h2-font-size: 2rem;
+$lead: 1.5rem;
+$body-color: #525252;

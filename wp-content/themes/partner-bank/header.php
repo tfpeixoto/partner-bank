@@ -31,11 +31,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- REMOVE -->
-  <link rel="shortcut icon" href="<?= get_template_directory_uri(); ?>/images/favicon.png" type="image/x-icon" />
-  <link rel="preload" href="<?= get_template_directory_uri(); ?>/fonts/MyriadHebrew-Regular.woff" as="font" type="font/woff2">
-  <link rel="preload" href="<?= get_template_directory_uri(); ?>/fonts/MyriadHebrew-Bold.woff" as="font" type="font/woff2">
-
   <!-- CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/css/components/animate.css">

@@ -80,8 +80,8 @@ function partner_paginacao()
     'total' => $wp_query->max_num_pages,
     'type' => 'list',
     'prev_next' => true,
-    'prev_text' => '&lsaquo;',
-    'next_text' => '&rsaquo;',
+    'prev_text' => 'Anterior',
+    'next_text' => 'Próximo',
     // 'before_page_number' => '&laquo;',
     // 'after_page_number' => '&raquo;',
     // 'show_all' => false,
@@ -133,8 +133,8 @@ function wpdocs_theme_slug_widgets_init() {
   register_sidebar( array(
       'name'          => __( 'Sidebar', 'partner' ),
       'id'            => 'sidebar',
-      'before_widget' => '<li id="%1$s" class="widget %2$s">',
-      'after_widget'  => '</li>',
+      'before_widget' => '',
+      'after_widget'  => '',
       'before_title'  => '<h3 class="widgettitle">',
       'after_title'   => '</h3>',
   ) );

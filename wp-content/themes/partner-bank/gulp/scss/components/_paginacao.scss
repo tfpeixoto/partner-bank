@@ -1,36 +1,43 @@
 .paginacao {
   padding: 2rem 0;
 
-  &__paginador {
-    display: inline-flex;
-    padding-inline-start: 0;
+  &__controle {
+    display: flex;
+    justify-content: center;
 
-    li {
-      list-style: none;
-      padding: 1rem;
+    .page-numbers {
+      display: inline-flex;
+      padding-inline-start: 0;
 
-      &.current {
-        a {
-          color: $science;
-          border-bottom: 3px solid $science;
-        }
-      }
-
-      a {
-        color: $white;
+      li {
         font-size: 1.5rem;
-      }
+        list-style: none;
+        padding: 1rem;
 
-      &.first,
-      &.last {
+        span {
+          &.current {
+            color: $science;
+            border-bottom: 3px solid $science;
+          }
+        }
+
         a {
           color: $white;
-          border: 2px solid $science;
-          border-radius: 30px;
-          padding: .5rem 1.5rem;
 
-          &:hover{
+          &:hover {
             text-decoration: none;
+          }
+
+          &.prev,
+          &.next {
+            color: $white;
+            border: 2px solid $science;
+            border-radius: 30px;
+            padding: 0 1.5rem;
+
+            &:hover {
+              text-decoration: none;
+            }
           }
         }
       }

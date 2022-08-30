@@ -2,14 +2,13 @@
 
 $estiloPagina = "single.css";
 require_once "header.php";
+
+if (have_posts()) : while (have_posts()) : the_post();
 ?>
 
-<section class="post-unico">
-  <div class="container">
-    <div class="row justify-content-between">
-
-      <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-
+    <section class="post-unico">
+      <div class="container">
+        <div class="row justify-content-between">
           <article class="col-12 col-md-8 post-unico__conteudo">
             <div class="post-unico__breadcrumb">
               <?php
@@ -54,16 +53,16 @@ require_once "header.php";
             </div>
           </article>
 
-      <?php endwhile;
-      endif; ?>
+          <?php get_template_part('partials/sidebar'); ?>
 
-      <?php get_template_part('partials/sidebar'); ?>
-
-    </div>
-  </div>
-</section>
+        </div>
+      </div>
+    </section>
 
 <?php
+  endwhile;
+endif;
+
 get_template_part('partials/compartilhe');
 require_once 'footer.php';
 ?>

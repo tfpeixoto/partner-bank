@@ -40,10 +40,12 @@
         font-size: 1.8rem;
       }
     }
+
     .lead {
       margin-bottom: 0;
       font-size: 1.2rem;
     }
+
     .aviso {
       color: #01a8f7;
       font-size: 1.4rem;
@@ -61,7 +63,6 @@
     }
   }
 
-  /* purgecss start ignore */
   .owl-nav {
     display: flex !important;
     justify-content: center;
@@ -90,5 +91,4 @@
       }
     }
   }
-  /* purgecss end ignore */
 }

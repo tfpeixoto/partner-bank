@@ -6,8 +6,10 @@
 @import "./node_modules/bootstrap/scss/bootstrap";
 
 // Custom styles
+/*! purgecss start ignore */
 @import "components/conta-digital";
 @import "components/depoimentos";
+/*! purgecss end ignore */
 @import "components/frase";
 @import "components/institucional";
 @import "components/beneficios";

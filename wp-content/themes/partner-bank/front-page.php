@@ -15,7 +15,7 @@ require_once 'header.php';
       Modalidades de serviços de pagamentos
     </p>
     <div id="carousel-c-digital">
-      <div class="owl-carousel owl-theme">
+      <div class="owl-carousel owl-default owl-theme">
 
         <div class="item">
           <div class="row align-items-center justify-content-center">
@@ -110,7 +110,7 @@ require_once 'header.php';
     </div>
 
     <div class="row">
-      <div class="owl-carousel owl-theme wow fadeInDown" data-wow-delay=".2s">
+      <div class="owl-carousel owl-default owl-theme wow fadeInDown" data-wow-delay=".2s">
         <div class="depoimentos__box">
           <div class="depoimentos__box__foto">
             <img src="<?= get_template_directory_uri(); ?>/images/foto-ronaldo-sandri.png" width="240" height="240" class="my-2" alt="Ronaldo Vitale Sandri - Diretor Predicon Condomínios" title="Ronaldo Vitale Sandri" />

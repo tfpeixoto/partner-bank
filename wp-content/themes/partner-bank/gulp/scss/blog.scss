@@ -1,4 +1,5 @@
 // Custom variables
+// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 @import "components/fontes";
 @import "components/variaveis";
 
@@ -8,9 +9,11 @@
 // Custom styles
 @import "components/busca";
 @import "components/trending";
+/*! purgecss start ignore */
 @import "components/categorias";
 @import "components/cards";
 @import "components/paginacao";
+/*! purgecss end ignore */
 @import "components/newsletter";
 @import "components/mapas";
 @import "components/footer";
