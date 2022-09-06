@@ -45,7 +45,12 @@ if (have_posts()) : while (have_posts()) : the_post();
             </div>
 
             <div class="post-unico__thumbnail">
-              <?php the_post_thumbnail(); ?>
+              <?php
+              if (has_post_thumbnail()) {
+                the_post_thumbnail('thumb-single');
+              } else {
+                echo "<div class='noimage'>Partner Bank</div>";
+              } ?>
             </div>
 
             <div class="post-unico__conteudo">

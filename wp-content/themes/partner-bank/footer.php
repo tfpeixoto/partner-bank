@@ -50,7 +50,6 @@
 </footer>
 
 <?php wp_footer(); ?>
-<script src="<?= get_template_directory_uri(); ?>/js/scripts.min.js"></script>
 <script src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/395c1bda-3074-4ee1-b1ca-17c469e49de4-loader.js" defer></script>
 
 </body>

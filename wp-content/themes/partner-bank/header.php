@@ -32,13 +32,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/css/components/animate.css">
-  <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/css/style.css">
-
-  <link rel="stylesheet" href="<?= get_template_directory_uri() . "/css/" . $estiloPagina ?>">
-
   <?php wp_head(); ?>
+  <link rel="preload" as="style" onload="this.rel='stylesheet'" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="preload" as="style" onload="this.rel='stylesheet'" href="<?= get_template_directory_uri(); ?>/css/components/animate.css">
+  <link rel="preload" as="style" onload="this.rel='stylesheet'" href="<?= get_template_directory_uri() . "/css/" . $estiloPagina ?>">
 
   <!-- Facebook Pixel Code -->
   <script>

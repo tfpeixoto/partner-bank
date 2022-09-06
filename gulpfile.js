@@ -41,7 +41,7 @@ gulp.task('purgecss', ['sass'], function () {
   return gulp.src(`${dir.src}/css/*.css`)
     .pipe(purgecss({
       content: [`${dir.build}/**/*.php`],
-      whitelist: ['.owl-nav', '.carousel-fade'],
+      whitelist: ['owl-nav', 'carousel-fade', 'collapse', 'collapsing'],
       whitelistPatterns: [/^owl/, /^carousel/]
     }))
     .pipe(gulp.dest(`${dir.build}/css`))

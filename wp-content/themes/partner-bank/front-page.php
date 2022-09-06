@@ -20,14 +20,13 @@ require_once 'header.php';
         <div class="item">
           <div class="row align-items-center justify-content-center">
             <div class="col-12 col-md-2 c-digital__icon wow fadeInDown">
-              <img src="<?= get_template_directory_uri(); ?>/images/conta-digital-partner-bank.png" alt="ícone conta digital no smartphone" />
+              <img src="<?= get_template_directory_uri(); ?>/images/conta-digital-partner-bank.png" width="160" height="165" alt="ícone conta digital no smartphone" />
             </div>
 
             <div class="col-12 col-md-6 c-digital__content wow fadeInDown" data-wow-delay=".2s">
               <h2>Conta Digital Partner Bank</h2>
               <p class="lead">Toda operação e controle financeiro na palma da sua mão.</p>
               <p class="lead">Mais praticidade e segurança. Você precisa, o Partner faz!</p>
-              <!-- <p class="aviso">Sem taxa de manutanção!</p> -->
             </div>
 
             <div class="col-12 col-md-4 c-digital__cta wow fadeInDown" data-wow-delay=".4s">
@@ -39,7 +38,7 @@ require_once 'header.php';
         <div class="item ">
           <div class="row align-items-center justify-content-center">
             <div class="col-12 col-md-2 c-digital__icon">
-              <img src="<?= get_template_directory_uri(); ?>/images/Icones-03.png" alt="Receita" />
+              <img src="<?= get_template_directory_uri(); ?>/images/Icones-03.png" width="160" height="165" alt="Receita" />
             </div>
 
             <div class="col-12 col-md-6 c-digital__content">
@@ -60,7 +59,7 @@ require_once 'header.php';
         <div class="item ">
           <div class="row align-items-center justify-content-center">
             <div class="col-12 col-md-2 c-digital__icon">
-              <img src="<?= get_template_directory_uri(); ?>/images/Icones-02.png" alt="Receita" />
+              <img src="<?= get_template_directory_uri(); ?>/images/Icones-02.png" width="160" height="160" alt="Receita" />
             </div>
 
             <div class="col-12 col-md-6 c-digital__content">
@@ -79,7 +78,7 @@ require_once 'header.php';
         <div class="item ">
           <div class="row align-items-center justify-content-center">
             <div class="col-12 col-md-2 c-digital__icon">
-              <img src="<?= get_template_directory_uri(); ?>/images/Icones-01.png" alt="Receita" />
+              <img src="<?= get_template_directory_uri(); ?>/images/Icones-01.png" width="160" height="111" alt="Receita" />
             </div>
 
             <div class="col-12 col-md-6 c-digital__content">
@@ -188,7 +187,7 @@ require_once 'header.php';
   <div class="container">
     <div class="row d-flex justify-content-center justify-content-md-between institucional__box">
       <div class="col-8 col-md-5 institucional__imagem wow fadeInDown">
-        <img src="<?= get_template_directory_uri(); ?>/images/marca-partner-bank-institucional.png" heigth="99" width="299" alt="logotipo PartnerBank" class="img-fluid mb-3 mb-md-0" />
+        <img src="<?= get_template_directory_uri(); ?>/images/marca-partner-bank-institucional.png" heigth="100" width="299" alt="logotipo PartnerBank" class="img-fluid mb-3 mb-md-0" />
       </div>
 
       <div class="col-11 col-md-7 institucional__conteudo wow fadeInRight">
@@ -532,8 +531,8 @@ require_once 'header.php';
 </section>
 
 <?php
-get_template_part('partials/modal', 'contato');
-get_template_part('partials/modal', 'erp');
+// get_template_part('partials/modal', 'contato');
+// get_template_part('partials/modal', 'erp');
 
 require_once 'footer.php';
 ?>

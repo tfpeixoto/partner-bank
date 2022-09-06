@@ -6,7 +6,9 @@ function partner_adiciona_recursos_tema()
   add_theme_support('title-tag');
   add_theme_support('custom-logo');
   add_theme_support('post-thumbnails');
-  add_image_size('thumb-card', 500, 250, true);
+  add_image_size('thumb-card', 350, 262, true);
+  add_image_size('thumb-single', 730, 547, true);
+  add_image_size('thumb-sidebar', 255, 191, true);
 }
 add_action('after_setup_theme', 'partner_adiciona_recursos_tema');
 
@@ -38,10 +40,7 @@ add_action('after_setup_theme', 'partner_registra_menu');
 function partner_scripts()
 {
   wp_enqueue_style('critital', get_template_directory_uri() . '/css/critical.css', array(), '1.1', 'all');
-
-  wp_deregister_script('jquery');
-  wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-3.5.1.min.js', array(), '3.5.1');
-  wp_enqueue_script('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js', array('jquery'), '4.5.3');
+  wp_enqueue_script('scripts', get_template_directory_uri() . '/js/scripts.min.js', array(), '1.0', true);
 }
 add_action('wp_enqueue_scripts', 'partner_scripts');
 
@@ -140,3 +139,40 @@ function wpdocs_theme_slug_widgets_init() {
   ) );
 }
 add_action( 'widgets_init', 'wpdocs_theme_slug_widgets_init' );
+
+// Remover o block-library/style.css
+function wpassist_remove_block_library_css()
+{
+  wp_dequeue_style('wp-block-library');
+}
+add_action('wp_enqueue_scripts', 'wpassist_remove_block_library_css');
+
+/**
+ * Disable the emoji's
+ */
+function disable_emojis()
+{
+  remove_action('wp_head', 'print_emoji_detection_script', 7);
+  remove_action('admin_print_scripts', 'print_emoji_detection_script');
+  remove_action('wp_print_styles', 'print_emoji_styles');
+  remove_action('admin_print_styles', 'print_emoji_styles');
+  remove_filter('the_content_feed', 'wp_staticize_emoji');
+  remove_filter('comment_text_rss', 'wp_staticize_emoji');
+  remove_filter('wp_mail', 'wp_staticize_emoji_for_email');
+
+  // Remove from TinyMCE
+  add_filter('tiny_mce_plugins', 'disable_emojis_tinymce');
+}
+add_action('init', 'disable_emojis');
+
+/**
+ * Filter out the tinymce emoji plugin.
+ */
+function disable_emojis_tinymce($plugins)
+{
+  if (is_array($plugins)) {
+    return array_diff($plugins, array('wpemoji'));
+  } else {
+    return array();
+  }
+}

@@ -1,5 +1,5 @@
-// Owl
 $(document).ready(function () {
+  // Owl home
   $('.owl-default').owlCarousel({
     loop: true,
     autoHeight: true,
@@ -11,7 +11,7 @@ $(document).ready(function () {
     items: 1,
   });
 
-
+  // Owl categories
   $('.owl-categories').owlCarousel({
     autoplay: true,
     autoWidth: true,
@@ -24,25 +24,6 @@ $(document).ready(function () {
     items: 5,
   });
 });
-
-
-// Forms
-const newsFooter = $('#news-footer')
-$(newsFooter).on('submit', function (e) {
-  e.preventDefault();
-  newsFooter.post;
-  newsFooter[0].reset();
-  $('#msg-sucesso').fadeIn(500).delay(2000).fadeOut(500);
-})
-
-const newsSidebar = $('#news-sidebar')
-$(newsSidebar).on('submit', function (e) {
-  e.preventDefault();
-  newsSidebar.post;
-  newsSidebar[0].reset();
-  $('#msg-sucesso').fadeIn(500).delay(2000).fadeOut(500);
-})
-
 
 // Navbar Fixed
 function navbarFixed() {
@@ -59,10 +40,27 @@ function navbarFixed() {
 };
 navbarFixed();
 
+// Form newsletter footer
+function newsletter() {
+  $('#news-footer').on('submit', function (e) {
+    e.preventDefault();
+    $('#news-footer').post;
+    $('#news-footer')[0].reset();
+    $('#msg-sucesso').fadeIn(500).delay(2000).fadeOut(500);
+  });
 
-// Wow
+  // Form newsletter sidebar
+  $('#news-sidebar').on('submit', function (e) {
+    e.preventDefault();
+    $('#news-sidebar').post;
+    $('#news-sidebar')[0].reset();
+    $('#msg-sucesso').fadeIn(500).delay(2000).fadeOut(500);
+  });
+}
+newsletter();
+
+// Wow init
 new WOW().init();
-
 
 // Modal
 $('#formSite').submit(function (e) {
@@ -73,7 +71,6 @@ $('#formSite').submit(function (e) {
   }, 6000);
 });
 
-
 // Modal
 $('#formErp').submit(function (e) {
   e.preventDefault();
@@ -83,6 +80,13 @@ $('#formErp').submit(function (e) {
   }, 6000);
 });
 
+// Carousel
+$('.carousel').carousel({
+  interval: 7000,
+  pause: false
+});
+
+$('.carousel-inner .carousel-item:first-child').addClass('active');
 
 // Zoho
 var $zoho = $zoho || {};

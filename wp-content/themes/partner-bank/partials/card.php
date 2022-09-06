@@ -1,6 +1,11 @@
 <div class="col-12 col-md-4">
   <div class="post-cards__card">
-    <?php the_post_thumbnail('thumb'); ?>
+    <?php
+    if (has_post_thumbnail()) {
+      the_post_thumbnail('thumb-card');
+    } else {
+      echo "<div class='post-cards__noimage'>Partner Bank</div>";
+    } ?>
 
     <div class="post-cards__conteudo">
       <h3 class="post-cards__titulo">
