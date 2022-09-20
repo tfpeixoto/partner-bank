@@ -9,6 +9,7 @@ function partner_adiciona_recursos_tema()
   add_image_size('thumb-card', 350, 262, true);
   add_image_size('thumb-single', 730, 547, true);
   add_image_size('thumb-sidebar', 255, 191, true);
+  add_image_size('thumb-banner', 1280, 720, true);
 }
 add_action('after_setup_theme', 'partner_adiciona_recursos_tema');
 

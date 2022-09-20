@@ -26,7 +26,7 @@
       <div class="form-group form-check">
         <label>
           <input type="checkbox" data-privacy="true" name="communications" value="1">
-          Ao informar meus dados, eu concordo com a <a href="politica-de-privacidade" target="_blank">Política de Privacidade da Group Software</a>.
+          Ao informar meus dados, eu concordo com a <a href="politica-de-privacidade" target="_blank">Política de Privacidade da Partner Bank</a>.
         </label>
       </div>
 

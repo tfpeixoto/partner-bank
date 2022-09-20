@@ -25,5 +25,7 @@
 @import "components/geral";
 /*! purgecss start ignore */
 @import "components/header";
+@import "./node_modules/bootstrap/scss/carousel";
 /*! purgecss end ignore */
 @import "components/banner";
+@import "components/banner-posts";

@@ -4,4 +4,5 @@ node_modules
 UsersThiago
 tmpnodejsnpm-cache
 
+/wp-content/uploads
 wp-config.php

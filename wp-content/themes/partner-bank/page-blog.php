@@ -7,7 +7,7 @@ $estiloPagina = "blog.css";
 require_once "header.php";
 ?>
 
-<?php get_template_part('partials/banner'); ?>
+<?php get_template_part('partials/banner-posts'); ?>
 
 <section class="busca">
   <div class="container">
@@ -150,7 +150,7 @@ require_once "header.php";
 
           <label>
             <input type="checkbox" data-privacy="true" name="communications" value="1">
-            Ao informar meus dados, eu concordo com a <a href="politica-de-privacidade" target="_blank">Política de Privacidade da Group Software</a>.
+            Ao informar meus dados, eu concordo com a <a href="politica-de-privacidade" target="_blank">Política de Privacidade do Partner Bank</a>.
           </label>
         </div>
       </div>

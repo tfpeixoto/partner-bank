@@ -111,8 +111,8 @@ $('.carousel').carousel({
   interval: 7000,
   pause: false
 });
-
 $('.carousel-inner .carousel-item:first-child').addClass('active');
+$('.carousel-indicators li:first-child').addClass('active');
 
 // Zoho
 var $zoho = $zoho || {};
