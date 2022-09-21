@@ -1,6 +1,6 @@
 <?php
 
-$estiloPagina = 'page.css';
+$estiloPagina = 'style.css';
 require_once 'header.php';
 ?>
 

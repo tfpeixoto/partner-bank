@@ -27,6 +27,9 @@ require_once "header.php";
       </div>
     </div>
   </div>
+
+  <div class="busca__circulo"></div>
+  <div class="busca__plus"></div>
 </section>
 
 <section class="trending">
@@ -59,11 +62,15 @@ require_once "header.php";
       <?php endif; ?>
     </div>
   </div>
+
+  <div class="trending__circulo-pequeno"></div>
+  <div class="trending__plus"></div>
+  <div class="trending__circulo-grande"></div>
 </section>
 
 <section id="categorias" class="categorias">
   <div class="container">
-    <div class="row">
+    <div class="row justify-content-center">
       <div class="col-12">
         <div class="owl-carousel owl-categories categorias__lista">
           <a href="blog/#categorias">Todas</a>
@@ -116,6 +123,9 @@ require_once "header.php";
       </div>
     </div>
   </div>
+
+  <div class="categorias__circulo"></div>
+  <div class="categorias__plus"></div>
 </section>
 
 <section class="newsletter">

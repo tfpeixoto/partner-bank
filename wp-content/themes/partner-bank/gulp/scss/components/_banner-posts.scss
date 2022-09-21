@@ -80,4 +80,30 @@
       }
     }
   }
+
+  &__circulo{
+    animation: oscile 3s infinite ease-in-out;
+    border: 1px solid $azure;
+    border-radius: 50%;
+    bottom: -25px;
+    right: 100px;
+    content: " ";
+    display: block;
+    position: absolute;
+    height: 50px;
+    z-index: 50;
+    width: 50px;
+  }
+
+  @keyframes oscile {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(-5px, 0);
+    }
+    100% {
+      transform: translate(0, )0;
+    }
+  }
 }

@@ -61,4 +61,6 @@
       <span class="sr-only">Próximo</span>
     </a>
   </div>
+
+  <div class="banner-posts__circulo"></div>
 </section>

@@ -1,15 +1,85 @@
-.trending{
+.trending {
   background: $downriver;
-  
-  &__titulo{
+  position: relative;
+
+  &__titulo {
     color: $white;
     margin-bottom: 2rem;
     text-align: center;
   }
 
-  &__result{
+  &__result {
     color: $white;
     font-size: 1.5rem;
     margin-bottom: 2rem;
+  }
+
+  &__plus {
+    animation: oscile 3s infinite ease-in-out;
+    content: " ";
+    left: 40%;
+    display: block;
+    position: relative;
+    height: 50px;
+    width: 50px;
+
+    &:after {
+      border: 1px solid $azure;
+      content: " ";
+      display: block;
+      height: 100%;
+      margin-left: 50%;
+      position: absolute;
+      width: 2px;
+    }
+    &:before {
+      border: 1px solid $azure;
+      content: " ";
+      display: block;
+      height: 2px;
+      margin-top: calc(50% - 2px);
+      position: absolute;
+      width: 100%;
+    }
+  }
+
+  &__circulo-pequeno {
+    animation: oscile 3s infinite ease-in-out;
+    border: 1px solid $azure;
+    border-radius: 50%;
+    bottom: 25px;
+    left: 100px;
+    content: " ";
+    display: block;
+    position: absolute;
+    height: 25px;
+    z-index: 50;
+    width: 25px;
+  }
+
+  &__circulo-grande {
+    animation: oscile 3s infinite ease-in-out;
+    border: 1px solid $azure;
+    border-radius: 50%;
+    bottom: 50px;
+    right: 100px;
+    content: " ";
+    display: block;
+    position: absolute;
+    height: 75px;
+    z-index: 50;
+    width: 75px;
+  }
+
+  @keyframes oscile {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(-5px, 5px);
+    }
+    100% {
+      transform: translate(0) 0;
+    }
   }
 }
