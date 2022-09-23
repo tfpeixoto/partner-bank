@@ -14,6 +14,14 @@
     margin-bottom: 2rem;
   }
 
+  &__noresult{
+    p{
+      color: $white;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  }
+
   &__plus {
     animation: oscile 3s infinite ease-in-out;
     content: " ";
@@ -32,6 +40,7 @@
       position: absolute;
       width: 2px;
     }
+
     &:before {
       border: 1px solid $azure;
       content: " ";
@@ -48,13 +57,17 @@
     border: 1px solid $azure;
     border-radius: 50%;
     bottom: 25px;
-    left: 100px;
+    left: 0;
     content: " ";
     display: block;
     position: absolute;
     height: 25px;
     z-index: 50;
     width: 25px;
+
+    @include media-breakpoint-up(md) {
+      left: 100px;
+    }
   }
 
   &__circulo-grande {
@@ -62,13 +75,17 @@
     border: 1px solid $azure;
     border-radius: 50%;
     bottom: 50px;
-    right: 100px;
     content: " ";
     display: block;
-    position: absolute;
     height: 75px;
+    position: absolute;
+    right: 0;
     z-index: 50;
     width: 75px;
+
+    @include media-breakpoint-up(md) {
+      right: 100px;
+    }
   }
 
   @keyframes oscile {

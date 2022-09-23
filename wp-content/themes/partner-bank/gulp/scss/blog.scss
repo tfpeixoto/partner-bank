@@ -7,13 +7,13 @@
 @import "./node_modules/bootstrap/scss/bootstrap";
 
 // Custom styles
-@import "components/busca";
 @import "components/trending";
 /*! purgecss start ignore */
 @import "components/categorias";
 @import "components/cards";
 @import "components/paginacao";
 /*! purgecss end ignore */
+@import "components/busca";
 @import "components/newsletter";
 @import "components/mapas";
 @import "components/footer";

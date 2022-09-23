@@ -33,7 +33,7 @@ require_once('header.php');
         endwhile;
       else : ?>
 
-        <div class="col-12">
+        <div class="col-12 trending__noresult">
           <p>Desculpe, não há resultados com o termo <strong><?= $termo_buscado; ?></strong>.</p>
         </div>
 

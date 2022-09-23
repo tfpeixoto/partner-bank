@@ -9,37 +9,8 @@ require_once "header.php";
 
 <?php get_template_part('partials/banner-posts'); ?>
 
-<section class="busca">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-12 col-md-10">
-        <h2>Tudo sobre sua instituição de pagamento</h2>
-
-        <form action="<?= home_url('/'); ?>" method="get">
-          <label for="search" class="sr-only"><?= __('Buscar por', 'partner_bank'); ?></label>
-          <input type="text" name="s" id="search" value="<?php the_search_query(); ?>" placeholder="<?= __('O que você está procurando?', 'partner_bank'); ?>" />
-          <button type="submit">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-              <path d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z" />
-            </svg>
-          </button>
-        </form>
-      </div>
-    </div>
-  </div>
-
-  <div class="busca__circulo"></div>
-  <div class="busca__plus"></div>
-</section>
-
 <section class="trending">
   <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-12 trending__titulo">
-        <h2>Trending</h2>
-      </div>
-    </div>
-
     <div class="row post-cards">
       <?php
       $args = array(
@@ -126,6 +97,33 @@ require_once "header.php";
 
   <div class="categorias__circulo"></div>
   <div class="categorias__plus"></div>
+</section>
+
+<section class="busca">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8">
+        <h2>Confira conteúdos para melhorar a performance do seu negócio</h2>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-6">
+        <form action="<?= home_url('/'); ?>" method="get">
+          <label for="search" class="sr-only"><?= __('Buscar por', 'partner_bank'); ?></label>
+          <input type="text" name="s" id="search" value="<?php the_search_query(); ?>" placeholder="<?= __('O que você está procurando?', 'partner_bank'); ?>" />
+          <button type="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z" />
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="busca__circulo"></div>
+  <div class="busca__plus"></div>
 </section>
 
 <section class="newsletter">

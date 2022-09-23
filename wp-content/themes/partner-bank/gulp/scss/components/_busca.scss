@@ -1,6 +1,7 @@
 .busca {
   background: $downriver;
   color: $white;
+  padding: 0 0 100px 0;
   position: relative;
   text-align: center;
 
@@ -19,7 +20,7 @@
     input {
       background: none;
       border: none;
-      font-size: 1rem;
+      font-size: .85rem;
       padding: 0.5rem;
       width: 100%;
 
