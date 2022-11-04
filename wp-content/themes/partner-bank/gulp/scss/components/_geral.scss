@@ -1,0 +1,28 @@
+body {
+  scroll-behavior: smooth;
+
+  section {
+    padding: 100px 0;
+  }
+  h2 {
+    font-family: MyriadHebrewBold, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+  }
+  .btn {
+    background: $azure;
+    border: 1px solid $azure;
+    border-radius: 100px;
+    color: $downriver !important;
+    font-family: MyriadHebrewBold, sans-serif;
+    margin: 0 10px;
+    padding: 0.5rem 0.7rem;
+    text-transform: uppercase;
+
+    &:hover {
+      background: $downriver;
+      border: 1px solid $downriver;
+      color: $white !important;
+    }
+  }
+}

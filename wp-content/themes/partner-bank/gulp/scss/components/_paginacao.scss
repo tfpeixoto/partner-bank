@@ -1,0 +1,46 @@
+.paginacao {
+  padding: 2rem 0;
+
+  &__controle {
+    display: flex;
+    justify-content: center;
+
+    .page-numbers {
+      display: inline-flex;
+      padding-inline-start: 0;
+
+      li {
+        font-size: 1.5rem;
+        list-style: none;
+        padding: 1rem;
+
+        span {
+          &.current {
+            color: $science;
+            border-bottom: 3px solid $science;
+          }
+        }
+
+        a {
+          color: $white;
+
+          &:hover {
+            text-decoration: none;
+          }
+
+          &.prev,
+          &.next {
+            color: $white;
+            border: 2px solid $science;
+            border-radius: 30px;
+            padding: 0 1.5rem;
+
+            &:hover {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

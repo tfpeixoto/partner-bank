@@ -1,0 +1,81 @@
+.newsletter {
+  background: $science;
+  color: $white;
+
+  &__titulo {
+    text-align: center;
+
+    h2 {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2rem;
+
+      i {
+        display: none;
+
+        @include media-breakpoint-up(md) {
+          font-size: 4rem;
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+
+  label {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+
+    &.form-check-label {
+      font-size: 1rem;
+      line-height: 1.2;
+      margin-left: 1.5rem;
+
+      @include media-breakpoint-up(md) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  input {
+    border-radius: 25px;
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem;
+
+    &.form-check-input {
+      margin: 0;
+    }
+  }
+
+  .form-check {
+    align-items: center;
+    color: $downriver;
+    display: flex;
+
+    a {
+      color: $downriver;
+      font-weight: 700;
+      text-decoration: underline;
+    }
+  }
+
+  button {
+    border: 0;
+    border-radius: 25px;
+    background: $downriver;
+    color: $white;
+    font-size: 1.5rem;
+    min-height: 50px;
+    text-align: center;
+    transition: all ease-in-out 0.25s;
+    width: 100%;
+
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+
+  .alert {
+    margin-top: 1rem;
+  }
+}

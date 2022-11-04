@@ -1,0 +1,93 @@
+.post-cards {
+  &__card {
+    background: $white;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 10px 10px rgba(0,0,0,.2);
+    color: $default;
+    margin: 1rem 0;
+    min-height: 95%;
+    overflow: hidden;
+    transition: all ease-in-out .25s;
+
+    &:hover{
+      box-shadow: 0 5px 5px rgba(0,0,0,.1);
+    }
+
+    img{
+      height: auto;
+      min-width: 100%;
+    }
+  }
+
+  &__noimage{
+    align-items: center;
+    background: #ccc;
+    color: $downriver;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    min-height: 250px;
+    width: 100%;
+  }
+
+  &__conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  &__titulo {
+    color: $downriver;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+
+    a{
+      color: $downriver;
+      text-decoration: none;
+      transition: all ease-in-out .25s;
+
+      &:hover{
+        color: $azure;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__data {
+    font-size: 0.85rem;
+  }
+
+  &__resumo,
+  p {
+    line-height: 1.2;
+  }
+
+  &__link {
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    transition: all ease-in-out 0.25s;
+
+    &:hover {
+      color: $downriver;
+      font-weight: bold;
+      text-decoration: none;
+
+      svg {
+        fill: $downriver;
+      }
+    }
+
+    svg {
+      fill: $science;
+      height: 1rem;
+      margin-top: 0.2rem;
+      transition: all ease-in-out 0.25s;
+      width: 2rem;
+    }
+  }
+}

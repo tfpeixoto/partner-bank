@@ -1,0 +1,97 @@
+.busca {
+  background: $downriver;
+  color: $white;
+  padding: 0 0 100px 0;
+  position: relative;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 2rem;
+  }
+
+  form {
+    background: $white;
+    border-radius: 2rem;
+    color: $downriver;
+    display: inline-flex;
+    padding: 0 1rem;
+    width: 100%;
+
+    input {
+      background: none;
+      border: none;
+      font-size: .85rem;
+      padding: 0.5rem;
+      width: 100%;
+
+      @include media-breakpoint-up(md) {
+        font-size: 2rem;
+      }
+    }
+
+    button {
+      background: none;
+      border: none;
+
+      svg {
+        fill: $downriver;
+        height: 2rem;
+        width: 2rem;
+      }
+    }
+  }
+
+  &__circulo {
+    animation: oscile 3s infinite ease-in-out;
+    border: 2px solid $azure;
+    border-radius: 50%;
+    left: -25px;
+    content: " ";
+    display: block;
+    position: absolute;
+    height: 125px;
+    z-index: 50;
+    width: 125px;
+  }
+
+  &__plus {
+    animation: oscile 3s infinite ease-in-out;
+    content: " ";
+    right: 10px;
+    display: block;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+
+    &:after {
+      border: 1px solid $azure;
+      content: " ";
+      display: block;
+      height: 100%;
+      margin-left: 50%;
+      position: absolute;
+      width: 2px;
+    }
+    &:before {
+      border: 1px solid $azure;
+      content: " ";
+      display: block;
+      height: 2px;
+      margin-top: calc(50% - 2px);
+      position: absolute;
+      width: 100%;
+    }
+  }
+
+  @keyframes oscile {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(-5px, 5px);
+    }
+    100% {
+      transform: translate(0, )0;
+    }
+  }
+}

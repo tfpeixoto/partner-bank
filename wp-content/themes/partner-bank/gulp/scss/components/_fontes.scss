@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "MyriadHebrewBold";
+  src: url(../fonts/MyriadHebrew-Bold.woff);
+  font-weight: bold;
+}
+@font-face {
+  font-family: "MyriadHebrewBoldItalic";
+  src: url(../fonts/MyriadHebrew-BoldIt.woff);
+  font-style: italic;
+  font-weight: bold;
+}
+@font-face {
+  font-family: "MyriadHebrewItalic";
+  src: url(../fonts/MyriadHebrew-It.woff);
+  font-style: italic;
+}
+@font-face {
+  font-family: "Myriad Hebrew";
+  src: url(../fonts/MyriadHebrew-Regular.woff);
+  font-weight: normal;
+}
+@font-face{
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face{
+  font-family: "Lexend";
+  src: url(../fonts/Lexend-Bold.ttf);
+  font-weight: bold;
+}
+
+$body-bg: #fff;
+$font-family-base: "Myriad Hebrew", sans-serif;
+
+$h2-font-size: 2rem;
+$lead: 1.5rem;
+$body-color: #525252;
+
+#zsiqbtn{
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+}
+
+// Plugins
+@import "./node_modules/bootstrap/scss/bootstrap";
+@import "home";
+@import "obrigado";

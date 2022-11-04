@@ -1,0 +1,52 @@
+#faq {
+  background: rgb(0, 218, 217);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 218, 217, 1) 0%,
+    rgba(102, 45, 145, 1) 100%
+  );
+
+  .card {
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+
+    .card-header {
+      background: transparent;
+      border-bottom: 0;
+      padding: 1rem 1.25rem;
+
+      .btn {
+        background: none;
+        border: 0;
+        border-radius: 0;
+        font-size: 20px;
+        font-weight: bold;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        text-transform: initial;
+        transition: all 0.25s ease-in-out;
+        width: 100%;
+
+        &:hover {
+          color: $downriver !important;
+          text-decoration: none;
+        }
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+    .card-body {
+      background: transparent;
+      padding-top: 0;
+
+      a {
+        color: $downriver;
+        font-weight: bold;
+      }
+    }
+  }
+}

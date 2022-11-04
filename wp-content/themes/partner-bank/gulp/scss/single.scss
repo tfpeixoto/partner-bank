@@ -1,0 +1,17 @@
+// Custom variables
+// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import "components/fontes";
+@import "components/variaveis";
+
+// Bootstrap
+@import "./node_modules/bootstrap/scss/bootstrap";
+
+// Custom styles
+@import "components/conteudo";
+/*! purgecss start ignore */
+@import "components/post-unico";
+/*! purgecss end ignore */
+@import "components/compartilhe";
+@import "components/sidebar";
+@import "components/mapas";
+@import "components/footer";

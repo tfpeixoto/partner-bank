@@ -1,0 +1,25 @@
+#equipe {
+  background: $downriver;
+  color: $white;
+
+  .box-equipe {
+    margin-bottom: 50px;
+    transition: all ease-in-out 0.3s;
+
+    &:hover {
+      transform: translateY(3px);
+    }
+    h3 {
+      color: $azure;
+      font-family: MyriadHebrewBold, sans-serif;
+      font-size: 2rem;
+      margin-bottom: 0;
+    }
+    p {
+      color: $white;
+      font-size: 1rem;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+    }
+  }
+}

@@ -1,0 +1,175 @@
+.header {
+  background: $downriver;
+  color: $white;
+
+  &.fixed {
+    box-shadow: 0 5px 10px rgba($black, 0.25);
+    position: fixed !important;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+  }
+
+  &__contatos {
+    align-items: center;
+    background: $white;
+    color: $downriver;
+    display: flex;
+    font-weight: bold;
+    min-height: 30px;
+    justify-content: end;
+    padding: 3px 10px;
+
+    .contato {
+      margin: 0 10px;
+      font-weight: 700;
+
+      i {
+        font-size: 18px;
+        margin: 0 4px;
+      }
+    }
+
+    a {
+      color: $downriver;
+      margin: 0px 5px;
+      transition: ALL ease-in-out 0.25s;
+
+      &:hover {
+        opacity: 0.75;
+        text-decoration: none;
+      }
+
+      i {
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  &__brand {
+    padding: 0.5rem 0;
+    text-align: center;
+
+    img {
+      height: auto;
+      max-width: 152px;
+      width: 100%;
+    }
+
+    p {
+      margin: 0.5rem 0 0 0;
+    }
+  }
+
+  &__mobile {
+    cursor: pointer;
+
+    svg {
+      fill: $white;
+      height: 2rem;
+      width: 2rem;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+
+    @include media-breakpoint-up(md) {
+      flex-direction: initial;
+      margin: 0;
+    }
+
+    .nav-item {
+      padding: 0.5rem 0;
+      text-align: center;
+      width: 100%;
+
+      @include media-breakpoint-up(md) {
+        padding: 0;
+        width: auto;
+      }
+
+      .nav-link {
+        color: $white;
+        padding: 0 0.75rem !important;
+        text-transform: uppercase;
+        transition: all 0.25s ease;
+
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+
+      &.dropdown {
+        position: relative;
+
+        &:hover {
+          .dropdown-menu {
+            &.show {
+              display: block;
+              opacity: 1;
+              visibility: visible;
+            }
+          }
+        }
+      }
+
+      .dropdown-menu {
+        background: $downriver;
+        color: $white;
+        display: none;
+
+        &.show {
+          border-bottom: solid 1px #535252;
+          display: block;
+          color: $white;
+          transition: all ease-in-out 0.25s;
+
+          @include media-breakpoint-up(md) {
+            border: solid 2px #535252;
+            box-shadow: 3px 3px 1px #535252;
+          }
+
+          li {
+            padding: 0;
+
+            .dropdown-item {
+              color: $white;
+              padding: 0.5rem;
+
+              @include media-breakpoint-up(md) {
+                padding: 0.5rem 1rem !important;
+              }
+
+              &:hover {
+                color: $downriver;
+              }
+            }
+          }
+        }
+      }
+
+      &.btn {
+        background: none;
+        border: 0;
+
+        a {
+          background: #29a840;
+          border-radius: 100px;
+          color: $white;
+          padding: 13px 25px !important;
+          transform: scale3d(1, 1, 1);
+          transition: all 0.25s ease;
+
+          &:hover {
+            background: #29a840;
+            transform: scale3d(0.97, 0.97, 1);
+          }
+        }
+      }
+    }
+  }
+}
