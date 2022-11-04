@@ -4,7 +4,6 @@
   "description": "Site Partner Bank",
   "main": "gulpfile.js",
   "scripts": {
-    "preinstall": "npx npm-force-resolutions",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "resolutions": {
@@ -35,6 +34,6 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.1.1",
-    "gulp": "^4.0.2"
+    "gulp": "^3.9.1"
   }
 }
