@@ -31,4 +31,20 @@
   font-weight: bold;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Montserrat:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
+$body-bg: #fff;
+$font-family-base: "Myriad Hebrew", sans-serif;
+
+$h2-font-size: 2rem;
+$lead: 1.5rem;
+$body-color: #525252;
+
+#zsiqbtn{
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+}
+
+// Plugins
+@import "./node_modules/bootstrap/scss/bootstrap";
+@import "home";
+@import "obrigado";
