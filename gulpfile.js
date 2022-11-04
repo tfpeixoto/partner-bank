@@ -2,7 +2,7 @@ var
   gulp = require('gulp');
 browserSync = require('browser-sync');
 sass = require('gulp-sass');
-imagemin = require('gulp-imagemin');
+// imagemin = require('gulp-imagemin');
 purgecss = require('gulp-purgecss');
 concat = require('gulp-concat');
 rename = require('gulp-rename');
@@ -81,7 +81,7 @@ gulp.task('js', function () {
 gulp.task('watch', function () {
   gulp.watch(`${dir.src}/scss/**/*.scss`, ['purgecss'])
   gulp.watch(`${dir.src}/js/*.js`, ['js'])
-  gulp.watch(`${dir.src}/images/*`, ['imagemin'])
+  // gulp.watch(`${dir.src}/images/*`, ['imagemin'])
 });
 
 gulp.task('default', ['watch', 'browser-sync'])
