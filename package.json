@@ -21,10 +21,10 @@
     "bootstrap": "^4.3.1",
     "browser-sync": "^2.27.9",
     "gulp-concat": "^2.6.1",
-    "gulp-imagemin": "^6.1.1",
+    "gulp-imagemin": "^8.0.0",
     "gulp-purgecss": "^4.0.2",
     "gulp-rename": "^1.4.0",
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^5.1.0",
     "gulp-uglify-es": "^3.0.0",
     "jquery": "^3.4.1",
     "jquery-mask-plugin": "^1.14.16",
@@ -35,6 +35,6 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.1.1",
-    "gulp": "^3.9.1"
+    "gulp": "^4.0.2"
   }
 }
