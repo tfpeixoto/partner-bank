@@ -20,7 +20,7 @@ require_once 'header.php';
         <div class="item">
           <div class="row align-items-center justify-content-center">
             <div class="col-12 col-md-2 c-digital__icon wow fadeInDown">
-              <img src="<?= get_template_directory_uri(); ?>/images/conta-digital-partner-bank.png" width="160" height="165" alt="ícone conta digital no smartphone" />
+              <img src="<?= get_template_directory_uri(); ?>/images/inadimplencia-nunca-mais.png" width="165" height="165" alt="ícone conta digital no smartphone" />
             </div>
 
             <div class="col-12 col-md-6 c-digital__content wow fadeInDown" data-wow-delay=".2s">
@@ -112,6 +112,7 @@ require_once 'header.php';
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </div>

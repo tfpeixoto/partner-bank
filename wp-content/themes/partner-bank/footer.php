@@ -16,7 +16,7 @@
         <img src="<?= get_template_directory_uri(); ?>/images/mapa-minas-gerais.svg" width="160" height="124" alt="Mapa de Minas Gerais" class="mr-3" />
         <p class="text-roxo"><strong>Belo Horizonte</strong><br />
           Rua Santa Catarina, 1631<br />
-          8º andar . Lourdes<br />
+          12º andar . Lourdes<br />
           Belo Horizonte/MG<br />
           CEP 30170-081<br />
           <a class="telefone" href="tel:3140404167" title="Telefone Belo Horizonte"><i class="fas fa-phone"></i> (31) 4040-4167</a>
