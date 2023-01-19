@@ -30,7 +30,7 @@ require_once 'header.php';
             </div>
 
             <div class="col-12 col-md-4 c-digital__cta wow fadeInDown" data-wow-delay=".4s">
-              <a type="button" href="https://materiais.partnerbank.com.br/conta-digital" target="_blank" rel="noopener noreferrer" class="btn btn-lg">Clique aqui e solicite a sua conta digital</a>
+              <a type="button" href="https://materiais.partnerbank.com.br/condominio-garantido" target="_blank" rel="noopener noreferrer" class="btn btn-lg">Clique aqui e converse com os nossos consultores</a>
             </div>
           </div>
         </div>
