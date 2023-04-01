@@ -20,6 +20,24 @@ require_once 'header.php';
         <div class="item">
           <div class="row align-items-center justify-content-center">
             <div class="col-12 col-md-2 c-digital__icon wow fadeInDown">
+              <img src="<?= get_template_directory_uri(); ?>/images/inadimplencia-nunca-mais.png" width="165" height="165" alt="ícone conta digital no smartphone" />
+            </div>
+
+            <div class="col-12 col-md-6 c-digital__content wow fadeInDown" data-wow-delay=".2s">
+              <h2>Condomínio Garantido</h2>
+              <p class="aviso">Inadimplência nunca mais!</p>
+              <p class="lead">O PartnerBank tem a melhor solução para zerar a inadimplência das taxas condominias e entregar um fluxo de caixa saudável.</p>
+            </div>
+
+            <div class="col-12 col-md-4 c-digital__cta wow fadeInDown" data-wow-delay=".4s">
+              <a type="button" href="https://materiais.partnerbank.com.br/condominio-garantido" target="_blank" rel="noopener noreferrer" class="btn btn-lg">Clique aqui e converse com os nossos consultores</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-12 col-md-2 c-digital__icon wow fadeInDown">
               <img src="<?= get_template_directory_uri(); ?>/images/conta-digital-partner-bank.png" width="160" height="165" alt="ícone conta digital no smartphone" />
             </div>
 
