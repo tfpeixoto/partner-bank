@@ -2,13 +2,6 @@
 <html lang="pt-br">
 
 <head>
-  <!-- Início do aviso de consentimento de cookies OneTrust para www.partnerbank.com.br -->
-  <!-- <script src="https://cdn.cookielaw.org/consent/3fe18421-054f-4af6-9624-4736a4092905/OtAutoBlock.js" defer></script>
-  <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" data-document-language="true" type="text/javascript" charset="UTF-8" data-domain-script="3fe18421-054f-4af6-9624-4736a4092905" defer></script>
-  <script type="text/javascript">
-    function OptanonWrapper() {}
-  </script> -->
-
   <!-- GTM -->
   <script>
     (function(w, d, s, l, i) {
@@ -24,20 +17,19 @@
       j.src =
         'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
       f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-PHLBTHF');
+    })(window, document, 'script', 'dataLayer', 'G-LJ994ZP59Y');
   </script>
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- CSS -->
   <?php wp_head(); ?>
   <link rel="preload" as="style" onload="this.rel='stylesheet'" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link rel="preload" as="style" onload="this.rel='stylesheet'" href="<?= get_template_directory_uri(); ?>/css/components/animate.css">
   <link rel="preload" as="style" onload="this.rel='stylesheet'" href="<?= get_template_directory_uri() . "/css/" . $estiloPagina ?>">
 
-  <!-- Facebook Pixel Code -->
+  <!-- Meta Pixel Code -->
   <script>
     ! function(f, b, e, v, n, t, s) {
       if (f.fbq) return;
@@ -57,34 +49,30 @@
       s.parentNode.insertBefore(t, s)
     }(window, document, 'script',
       'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '244585623195343');
+    fbq('init', '210018748304385');
     fbq('track', 'PageView');
   </script>
-  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=244585623195343&ev=PageView&noscript=1" /></noscript>
-</head>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=210018748304385&ev=PageView&noscript=1" /></noscript>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-156535822-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156535822-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag('js', new Date());
-
-  gtag('config', 'UA-156535822-1');
-</script>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-156535822-1');
+  </script>
 
 <body <?php body_class(); ?>>
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PHLBTHF" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=G-LJ994ZP59Y" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-  <!-- header -->
   <header id="topo" class="header">
     <div class="header__contatos">
-    <span class="contato">Suporte: <a href="tel:3140404167" class="contato-link" rel="noopener noreferrer"><i class="fa-solid fa-phone"></i>(31) 4040-4167</span></a>
+      <span class="contato">Suporte: <a href="tel:3140404167" class="contato-link" rel="noopener noreferrer"><i class="fa-solid fa-phone"></i>(31) 4040-4167</span></a>
       <a href="https://www.instagram.com/partner.bank/" class="contato-link" title="Nosso Instagram" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-instagram"></i></a>
       <a href="https://www.facebook.com/partnerbankbr/" class="contato-link" title="Nosso Facebook" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-facebook"></i></a>
       <a href="https://www.linkedin.com/company/partnerbank/" class="contato-link" title="Nosso LinkedIn" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
